@@ -14,7 +14,7 @@ function Header() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Learn React
+        Learn the React
       </a>
     </header>
   );
