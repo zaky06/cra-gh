@@ -10,6 +10,10 @@ https://gambolthemes.net/workwise-new/index.html
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install deps
+
 ### `npm start`
 
 Runs the app in the development mode.\
