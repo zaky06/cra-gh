@@ -24,4 +24,4 @@ You will also see any lint errors in the console.
 
 ### `npm run deploy`
 
-Project will be deployed [here](balkanskiy.github.io/cra-gh/).
+Project will be deployed [here](https://balkanskiy.github.io/cra-gh/).
