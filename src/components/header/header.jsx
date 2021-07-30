@@ -1,9 +1,10 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../../logo.svg";
+import "./header.css";
 
 function Header() {
   return (
-    <header className="App-header">
+    <header className="header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
         Edit <code>src/App.js</code> and save to reload.
