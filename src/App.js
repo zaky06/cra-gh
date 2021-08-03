@@ -1,14 +1,9 @@
-import Header from "./components/header";
+import Header from "./components/header/Header";
 import "./App.css";
 
-function App() {
-  /* For Data fetching */
-  fetch("https://jsonplaceholder.typicode.com/posts")
-    .then((response) => response.json())
-    .then((json) => console.log(json));
-
+const App = () => {
   return (
-    <div className="App">
+    <div className='app-wripper'>
       <Header />
     </div>
   );

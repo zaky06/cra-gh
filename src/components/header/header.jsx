@@ -1,24 +1,24 @@
 import React from "react";
-import logo from "../../logo.svg";
-import "./header.css";
+import Style from './Header.module.css';
+import Stil from './Logo.module.css';
+import Con from './Container.module.css';
+import Nav from "./Nav/Nav";
 
-function Header() {
-  return (
-    <header className="header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn the React
-      </a>
-    </header>
-  );
+const Header = () => {
+    return (
+        <header className={Style.header}>
+        <div className={Con.container} >
+          <div className={Stil.logo}>
+            <img src="https://gambolthemes.net/workwise-new/images/logo.png" />
+          </div>
+          <div>
+          <Nav />
+          </div>
+        </div>
+      </header>
+    );
+
+    
 }
 
 export default Header;
