@@ -5,11 +5,13 @@ const Li = (props) => {
     return (
             <li className={Style.li}>
                 <a href="">
-                <span>
-                   <img src={props.img}/>
-                </span>
-                 {props.name}
-                 </a>
+                    <span>
+                        <img src={props.img}/>
+                    </span>
+                    <p>
+                        {props.name}
+                    </p>
+                </a>
             </li>
     );
 }
