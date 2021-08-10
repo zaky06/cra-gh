@@ -1,4 +1,4 @@
-import Style from './Li.module.css';
+import Style from './li.module.css';
 
 const Li = (props) => {
     console.log(props);
@@ -17,4 +17,3 @@ const Li = (props) => {
 }
 
 export default Li;
-

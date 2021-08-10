@@ -1,5 +1,5 @@
-import Li from "./Li/Li";
-import Style from './Nav.module.css';
+import Li from "../li/li";
+import Style from './nav.module.css';
 
 
 const Nav = ({nav}) => {

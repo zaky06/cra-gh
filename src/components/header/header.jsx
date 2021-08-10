@@ -1,8 +1,8 @@
 import React from "react";
-import Style from './Header.module.css';
-import Stil from './Logo.module.css';
-import Con from './Container.module.css';
-import Nav from "./Nav/Nav";
+import Style from './header.module.css';
+import Stil from './logo.module.css';
+import Con from './container.module.css';
+import Nav from "../nav/nav";
 
 const Header = (props) => {
     return (
