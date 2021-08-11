@@ -4,8 +4,15 @@ a {
 }
 
 .li {
+    /* padding-left: 50px; */
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 1%;
+    padding-right: 23px;
+}
+
+p {
+    /* padding-right: 16px; */
+    margin-top: -4px;
+    font-size: 15px;
 }

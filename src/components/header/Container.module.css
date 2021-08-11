@@ -1,7 +1,10 @@
-/* .container {
+.container {
     width: 100%;
+    height: 56px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-} */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}

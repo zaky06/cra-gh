@@ -1,6 +1,13 @@
+import React from "react";
 import Style from './li.module.css';
+import PropTypes from 'prop-types';
 
 const Li = (props) => {
+    Li.propTypes = {
+        name: PropTypes.string,
+        img: PropTypes.string
+    };
+    
     console.log(props);
     return (
             <li className={Style.li}>
@@ -15,5 +22,7 @@ const Li = (props) => {
             </li>
     );
 }
+
+
 
 export default Li;

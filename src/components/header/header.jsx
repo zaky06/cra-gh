@@ -3,8 +3,13 @@ import Style from './header.module.css';
 import Stil from './logo.module.css';
 import Con from './container.module.css';
 import Nav from "../nav/nav";
+import PropTypes from 'prop-types';
 
 const Header = (props) => {
+  Header.propTypes = {
+    header: PropTypes.string,
+    nav: PropTypes.string
+  };
     return (
         <header className={Style.header}>
         <div className={Con.container} >
@@ -18,5 +23,8 @@ const Header = (props) => {
 
     
 }
+
+
+
 
 export default Header;
