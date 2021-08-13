@@ -1,5 +1,5 @@
 import React from "react";
-import Style from './li.module.css';
+import style from './li.module.css';
 import PropTypes from 'prop-types';
 
 const Li = (props) => {
@@ -10,7 +10,7 @@ const Li = (props) => {
     
     console.log(props);
     return (
-            <li className={Style.li}>
+            <li className={style.li}>
                 <a href="">
                     <span>
                         <img src={props.img}/>
