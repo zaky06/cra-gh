@@ -4,12 +4,9 @@ import style from './nav.module.css';
 import PropTypes from 'prop-types';
 
 
+
 const Nav = ({nav}) => {
-    Nav.propTypes = {
-        name: PropTypes.string,
-        id: PropTypes.number,
-        nav: PropTypes.array
-    };
+
     return (
             <ul className={style.ul}>
             {nav.map((li) => {
@@ -22,5 +19,10 @@ const Nav = ({nav}) => {
 }
 
 
+Nav.propTypes = {
+  name: PropTypes.string,
+  id: PropTypes.number,
+  nav: PropTypes.arrayOf(PropTypes.shape({id: PropTypes.number, name: PropTypes.string, img: PropTypes.string}))
+};
 
 export default Nav;

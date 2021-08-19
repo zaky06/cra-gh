@@ -3,11 +3,8 @@ import style from './styles.module.css';
 import Nav from "../nav/nav";
 import PropTypes from 'prop-types';
 
+
 const Header = (props) => {
-  Header.propTypes = {
-    header: PropTypes.string,
-    nav: PropTypes.string
-  };
     return (
         <header className={style.header}>
         <div className={style.container} >
@@ -23,6 +20,9 @@ const Header = (props) => {
 }
 
 
+Header.propTypes = {
+  header: PropTypes.shape({nav: PropTypes.arrayOf(PropTypes.shape({id: PropTypes.number, name: PropTypes.string, img: PropTypes.string}))})
+};
 
 
 export default Header;

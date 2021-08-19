@@ -3,10 +3,7 @@ import style from './li.module.css';
 import PropTypes from 'prop-types';
 
 const Li = (props) => {
-    Li.propTypes = {
-        name: PropTypes.string,
-        img: PropTypes.string
-    };
+
     
     console.log(props);
     return (
@@ -23,6 +20,9 @@ const Li = (props) => {
     );
 }
 
-
+Li.propTypes = {
+    name: PropTypes.string,
+    img: PropTypes.string
+};
 
 export default Li;
