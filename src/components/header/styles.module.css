@@ -3,6 +3,7 @@
     width: 40px;
     margin-left: 132px;
     padding: 0px;
+    padding-right: 14px;
 }
 
 .header {
@@ -20,4 +21,36 @@
     padding-bottom: 0px;
     display: flex;
     flex-direction: row;
+}
+
+.Form {
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    padding-top: 9px;
+}
+
+.button {
+    height: 38px;
+    width: 40px;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+    padding: 0;
+    margin-top: 0px;
+    background-color: #efefef;
+    
+}
+
+.search {
+    width: 236px;
+    height: 36px;
+    border: none;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.img {
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    padding: 0;
 }

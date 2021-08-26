@@ -2,6 +2,7 @@ import React from "react";
 import style from './styles.module.css';
 import Nav from "../nav/nav";
 import PropTypes from 'prop-types';
+import Search from "./search";
 
 
 const Header = (props) => {
@@ -11,6 +12,7 @@ const Header = (props) => {
           <div className={style.logo}>
             <img src="https://gambolthemes.net/workwise-new/images/logo.png" />
           </div>
+          <Search className={style.Form}/>
           <Nav nav={props.header.nav}/>
         </div>
       </header>
