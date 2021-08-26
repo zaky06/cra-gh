@@ -2,7 +2,7 @@ import React from "react";
 import style from './styles.module.css';
 import Nav from "../nav/nav";
 import PropTypes from 'prop-types';
-import Search from "./search";
+import Search from "../search/search";
 
 
 const Header = (props) => {

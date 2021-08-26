@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import style from './styles.module.css';
+import style from './search.module.css';
 
 export default function Search() {
   const { register, handleSubmit, watch} = useForm();
