@@ -12,7 +12,7 @@ const Header = (props) => {
           <div className={style.logo}>
             <img src="https://gambolthemes.net/workwise-new/images/logo.png" />
           </div>
-          <Search className={style.Form}/>
+          <Search  search={props.header.search}/>
           <Nav nav={props.header.nav}/>
         </div>
       </header>
@@ -23,8 +23,11 @@ const Header = (props) => {
 
 
 Header.propTypes = {
-  header: PropTypes.shape({nav: PropTypes.arrayOf(PropTypes.shape({id: PropTypes.number, name: PropTypes.string, img: PropTypes.string}))})
+  header: PropTypes.shape({nav: PropTypes.arrayOf(PropTypes.shape({id: PropTypes.number, name: PropTypes.string, img: PropTypes.string})),
+  search: PropTypes.arrayOf(PropTypes.shape({name: PropTypes.string, img: PropTypes.string}))})
 };
+
+
 
 
 export default Header;

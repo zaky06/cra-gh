@@ -17,7 +17,7 @@ const App = (props) => {
 
 
 App.propTypes = {
-  store: PropTypes.shape({ header: {nav: navType} })
+  store: PropTypes.shape({ header: {nav: navType, search: navType} })
 };
 
 export default App;

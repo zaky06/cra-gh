@@ -8,7 +8,10 @@ const store = {
             {id: 5, name: 'Jobs', img: 'https://gambolthemes.net/workwise-new/images/icon5.png'},
             {id: 6, name: 'Messages', img: 'https://gambolthemes.net/workwise-new/images/icon6.png'},
             {id: 7, name: 'Notification', img: 'https://gambolthemes.net/workwise-new/images/icon7.png'},
-            ]
+            ],
+        search: [
+            {name: 'Search', img: 'https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png'}
+        ]
     }
 }
 
