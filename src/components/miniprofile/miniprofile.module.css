@@ -1,0 +1,30 @@
+.divv {
+    display: flex;
+    width: 108px;
+    border-left: 1px solid #dd3e2b;
+    border-right: 1px solid #dd3e2b;
+}
+
+
+.avatar {
+    padding-top: 13px;
+    padding-left: 10px;
+    height: 30px;
+    width: 29px;
+    margin: 0;
+}
+
+.name {
+    padding-left: 9px;
+    padding-top: 20px;
+    font-size: 14px;
+    
+}
+
+.icon {
+    height: 10px;
+    width: 10px;
+    padding-top: 24px;
+    padding-left: 8px;
+    
+}
