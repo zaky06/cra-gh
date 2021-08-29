@@ -1,0 +1,29 @@
+.item {
+    display: flex;
+    text-align: center;
+    padding-right: 13px;
+    padding-left: 13px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.image {
+    width: auto;
+    height: 13px;
+    margin-bottom: 2px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: 100%;
+}

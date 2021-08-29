@@ -1,4 +1,4 @@
-.divv {
+.container {
     display: flex;
     width: 108px;
     border-left: 1px solid #dd3e2b;
@@ -23,7 +23,8 @@
     padding-left: 9px;
     padding-top: 20px;
     font-size: 14px;
-    
+    text-decoration: none;
+    color: inherit;
 }
 
 .icon {

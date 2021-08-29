@@ -3,7 +3,7 @@ import style from './miniprofile.module.css';
 
 const Miniprofile = () => {
     return (
-        <div className={style.divv}>
+        <div className={style.container}>
             <img className={style.avatar} src="https://gambolthemes.net/workwise-new/images/resources/user.png"/>
             <a className={style.name} href="#">John</a>
             <span>
@@ -12,5 +12,10 @@ const Miniprofile = () => {
         </div>
     )
 }
+
+// Miniprofile.propTypes = {
+//     avatarSrc: PropTypes.string,
+//     iconSrc: PropTypes.string
+// };
 
 export default Miniprofile;

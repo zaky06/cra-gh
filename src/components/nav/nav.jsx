@@ -1,5 +1,5 @@
 import React from "react";
-import Li from "../li/li";
+import Item from "../item/item";
 import style from './nav.module.css';
 import PropTypes from 'prop-types';
 
@@ -8,10 +8,10 @@ import PropTypes from 'prop-types';
 const Nav = ({nav}) => {
 
     return (
-            <ul className={style.ul}>
+            <ul className={style.nav}>
             {nav.map((li) => {
               return (
-                <Li key={li.id} name={li.name} img={li.img}/>
+                <Item key={li.id} name={li.name} img={li.img}/>
               )   
             })}
             </ul>

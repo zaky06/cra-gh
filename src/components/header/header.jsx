@@ -8,16 +8,21 @@ import Profilelist from "../profilelist/profilelist";
 
 
 const Header = (props) => {
+
+    console.log(props.header)
+
     return (
-        <header className={style.header}>
+      <header className={style.header}>
         <div className={style.container} >
-          <div className={style.logo}>
-            <img src="https://gambolthemes.net/workwise-new/images/logo.png" />
+          <div className={style.left}>
+            <img className={style.logo} src="https://gambolthemes.net/workwise-new/images/logo.png" />
+            <Search iconSrc={props.header.search.iconSrc}/>
           </div>
-          <Search  search={props.header.search}/>
-          <Nav nav={props.header.nav}/>
-          <Miniprofile />
-          <Profilelist />
+          <div className={style.right}>
+            <Nav nav={props.header.nav}/>
+            <Miniprofile />
+            <Profilelist />
+          </div>
         </div>
       </header>
     );
@@ -28,7 +33,7 @@ const Header = (props) => {
 
 Header.propTypes = {
   header: PropTypes.shape({nav: PropTypes.arrayOf(PropTypes.shape({id: PropTypes.number, name: PropTypes.string, img: PropTypes.string})),
-  search: PropTypes.arrayOf(PropTypes.shape({name: PropTypes.string, img: PropTypes.string}))})
+  search: PropTypes.shape({iconSrc: PropTypes.string})})
 };
 
 

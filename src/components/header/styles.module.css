@@ -1,18 +1,19 @@
 .logo {
-    margin-top: 10px;
-    width: 40px;
-    margin-left: 132px;
-    padding: 0px;
-    padding-right: 14px;
+    margin-right: 20px;
+    height: 34px;
+    width: auto;
 }
 
 .header {
+    display: flex;
+    justify-content: center;
     width: 100%;
     background-color: #e44d3a;
     height: auto
 }
 
 .container {
+    max-width: 1140px;
     width: 100%;
     height: 56px;
     padding-right: 15px;
@@ -21,4 +22,34 @@
     padding-bottom: 0px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    color: white;
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px){
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.left {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 990px) {
+    .left {
+        flex: 1 1 auto;
+        max-width: 400px;
+    }
+}
+
+.right {
+    display: flex;
+    flex-wrap: nowrap;
 }
