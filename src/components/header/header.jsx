@@ -4,6 +4,7 @@ import Nav from "../nav/nav";
 import PropTypes from 'prop-types';
 import Search from "../search/search";
 import Miniprofile from "../miniprofile/miniprofile";
+import Profilelist from "../profilelist/profilelist";
 
 
 const Header = (props) => {
@@ -16,6 +17,7 @@ const Header = (props) => {
           <Search  search={props.header.search}/>
           <Nav nav={props.header.nav}/>
           <Miniprofile />
+          <Profilelist />
         </div>
       </header>
     );

@@ -5,6 +5,12 @@
     border-right: 1px solid #dd3e2b;
 }
 
+/* @media screen and (max-width: 1200px){
+    .divv {
+        
+    }
+} */
+
 .avatar {
     padding-top: 13px;
     padding-left: 10px;

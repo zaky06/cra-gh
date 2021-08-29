@@ -1,0 +1,16 @@
+.list {
+    display: none;
+    padding-top: 13px;
+    padding-left: 10px;
+}
+
+.img {
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 1200px){
+    .list {
+     display: flex;   
+    }
+}
