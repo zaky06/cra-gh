@@ -14,6 +14,8 @@
 */
 
 // Полезная информация:
+// - https://learn.javascript.ru/object
+// - https://learn.javascript.ru/logical-operators
 // - https://learn.javascript.ru/array-methods#map
 // - https://learn.javascript.ru/keys-values-entries
 
