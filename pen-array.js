@@ -14,9 +14,6 @@
 */
 
 // Полезная информация:
-// - https://learn.javascript.ru/variables
-// - https://learn.javascript.ru/object 
-// - https://learn.javascript.ru/logical-operators
 // - https://learn.javascript.ru/array-methods#map
 // - https://learn.javascript.ru/keys-values-entries
 
@@ -33,8 +30,11 @@ const testData = [
 function getDirectory(users) {
   // Add answer here
   const newUser = users.map(item => {
-    // Object.value(item.name) = Object.keys(item.name) && (Object.values(item.name) = Object.values(item.email));
-    (item.name.value = item.name.key) && (item.name.value = item.email.value);
+    delete item.age;
+    const keyName = item.name;
+    item[keyName] = item.email;
+    delete item.name;
+    delete item.email;
     return item;
   });
   // console.log(item);
