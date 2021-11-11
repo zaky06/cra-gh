@@ -1,0 +1,47 @@
+.icon {
+    height: 10px;
+    width: 10px;
+    padding-top: 24px;
+    padding-left: 85px;
+}
+
+.action {
+    position: fixed;
+
+}
+
+.action .profile {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* .action .profile img {
+    position: absolute;
+    
+} */
+
+.action .menu {
+    background: black;
+    position: absolute;
+    top: 56px;
+    width: 200px;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.action .menu::before {
+    content: '';
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.action .menu:active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.action .menu h3 {
+    text-align: center;
+    font-size: 15px;
+}
