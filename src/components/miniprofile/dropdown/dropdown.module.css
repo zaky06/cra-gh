@@ -27,7 +27,6 @@
     top: 56px;
     width: 200px;
     transition: 0.5s;
-    visibility: hidden;
 }
 
 .action .menu::before {
