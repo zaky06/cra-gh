@@ -5,3 +5,7 @@
 .app-wrapper {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+body {
+  background-color: #f2f2f2;
+}

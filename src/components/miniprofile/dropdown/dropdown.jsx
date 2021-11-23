@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from "./dropdown.module.css";
+import Demo1 from "./radio";
 
 const Dropdown = () => {
   const [isMenuOpened, setIsmenuOpened] = useState(false);
@@ -22,6 +23,7 @@ const Dropdown = () => {
       {isMenuOpened && (
         <div className={style.menu}>
           <h3>Online Status</h3>
+          <Demo1 />
         </div>
       )}
     </div>
