@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./dropdown.module.css";
-import Demo1 from "./radio";
+import Status from "./status";
 import Search from "../../search/search";
 
 const Dropdown = () => {
@@ -24,33 +24,25 @@ const Dropdown = () => {
       {isMenuOpened && (
         <div className={style.menu}>
           <h3>Online Status</h3>
-          <Demo1 />
+          <Status />
           <h3>Custom Status</h3>
           <div className={style.search}>
             <Search />
           </div>
           <h3>Settings</h3>
           <div className={style.setting}>
-              <a href="">
-                  <small>
-                    Account Setting
-                  </small>
-              </a>
-              <a href="">
-                  <small>
-                      Privacy
-                  </small>
-              </a>
-              <a href="">
-                  <small>
-                      Faqs
-                  </small>
-              </a>
-              <a href="">
-                  <small>
-                      Terms {`&`} Conditions
-                  </small>
-              </a>
+            <a href="">
+              <small>Account Setting</small>
+            </a>
+            <a href="">
+              <small>Privacy</small>
+            </a>
+            <a href="">
+              <small>Faqs</small>
+            </a>
+            <a href="">
+              <small>Terms {`&`} Conditions</small>
+            </a>
           </div>
           <h3>Logout</h3>
         </div>
