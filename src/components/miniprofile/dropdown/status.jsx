@@ -5,7 +5,7 @@ const Status = () => {
   return (
     <form action="" className={style.statusForm}>
       <ul>
-        <li>
+        <li className={style.otLi}>
           <input
             className={style.onOffStatus}
             type="radio"
@@ -15,7 +15,7 @@ const Status = () => {
           />
           <label htmlFor="online">Online</label>
         </li>
-        <li>
+        <li className={style.posleLi}>
           <input type="radio" id="offline" name="status" value="offline" />
           <label htmlFor="offline">Offline</label>
         </li>

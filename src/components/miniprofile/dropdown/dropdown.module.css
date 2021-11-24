@@ -16,11 +16,6 @@
     cursor: pointer;
 }
 
-/* .action .profile img {
-    position: absolute;
-    
-} */
-
 .action .menu {
     background: white;
     position: absolute;
@@ -30,9 +25,17 @@
 }
 
 .menu h3 {
-    border-bottom: 1px solid #e5e5e5;
     padding: 15px 20px;
-    /* float: left; */
+    margin: 0;
+}
+
+.h3Border {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+
+.h3Setting {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .action .menu::before {
@@ -47,7 +50,6 @@
 }
 
 .action .menu h3 {
-    text-align: center;
     font-size: 15px;
 }
 
@@ -56,21 +58,27 @@ h3 {
     
 }
 
-ul {
-    list-style: none;
-}
-
-.onOffStatus {
-    padding: 20px;
-    /* float: left; */
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.fgtSec small{
-    font-size: 14px;
-    margin-left: 10px;
+label {
+    margin: 10px;
     color: #686868;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.otLi {
+    padding-bottom: 15px;
+}
+
+.posleLi {
+    padding-bottom: 15px;
+}
+
 
 .search {
     padding: 20px;
@@ -93,8 +101,14 @@ input {
 
 .setting {
     border-bottom: 1px solid #e5e5e5;
+    padding: 15px;
 }
 
 .statusForm {
     color: black;
+}
+
+.h3Logout {
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
 }

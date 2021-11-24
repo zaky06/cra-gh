@@ -23,13 +23,13 @@ const Dropdown = () => {
       </div>
       {isMenuOpened && (
         <div className={style.menu}>
-          <h3>Online Status</h3>
+          <h3 className={style.h3Border}>Online Status</h3>
           <Status />
-          <h3>Custom Status</h3>
+          <h3 className={style.h3Border}>Custom Status</h3>
           <div className={style.search}>
             <Search />
           </div>
-          <h3>Settings</h3>
+          <h3 className={style.h3Setting}>Settings</h3>
           <div className={style.setting}>
             <a href="">
               <small>Account Setting</small>
@@ -44,7 +44,7 @@ const Dropdown = () => {
               <small>Terms {`&`} Conditions</small>
             </a>
           </div>
-          <h3>Logout</h3>
+          <h3 className={style.h3Logout}>Logout</h3>
         </div>
       )}
     </div>
