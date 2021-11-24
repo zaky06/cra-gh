@@ -20,9 +20,12 @@
     background: white;
     position: absolute;
     top: 56px;
-    width: 200px;
+    width: 238px;
     transition: 0.5s;
+    right: -14px;
+    border-radius: 0 0 5px 5px;
 }
+
 
 .menu h3 {
     padding: 15px 20px;
@@ -63,7 +66,7 @@ label {
     color: #686868;
 }
 
-ul {
+.statusForm ul {
     list-style: none;
     margin: 0;
     padding-left: 15px;
@@ -108,7 +111,14 @@ input {
     color: black;
 }
 
-.h3Logout {
+/* .h3Logout {
+    border-bottom: 1px solid #e5e5e5;
+} */
+
+/* .aLogout {
     border-bottom: 1px solid #e5e5e5;
     text-align: center;
-}
+    font-size: 15px;
+    color: black;
+    padding: 15px;
+} */
