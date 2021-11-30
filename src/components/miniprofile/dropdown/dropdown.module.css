@@ -111,9 +111,10 @@ input {
     color: black;
 }
 
-/* .h3Logout {
+.h3Logout {
     border-bottom: 1px solid #e5e5e5;
-} */
+    text-align: center;
+}
 
 /* .aLogout {
     border-bottom: 1px solid #e5e5e5;

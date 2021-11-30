@@ -16,7 +16,7 @@ const Header = (props) => {
         <div className={style.container} >
           <div className={style.left}>
             <img className={style.logo} src="https://gambolthemes.net/workwise-new/images/logo.png" />
-            <Search iconSrc={props.header.search.iconSrc}/>
+            <Search iconSrc={props.header.search.iconSrc} placeholder={"Search..."}/>
           </div>
           <div className={style.right}>
             <Nav nav={props.header.nav}/>
