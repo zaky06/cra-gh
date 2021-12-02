@@ -1,36 +1,28 @@
 .container {
     display: flex;
-    width: 108px;
     border-left: 1px solid #dd3e2b;
     border-right: 1px solid #dd3e2b;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
 }
 
-/* @media screen and (max-width: 1200px){
-    .divv {
-        
-    }
-} */
 
 .avatar {
-    padding-top: 13px;
-    padding-left: 10px;
     height: 30px;
-    width: 29px;
+    width: auto;
     margin: 0;
+    margin-right: 10px;
 }
 
 .name {
-    padding-left: 9px;
-    padding-top: 20px;
     font-size: 14px;
     text-decoration: none;
     color: inherit;
+    margin-right: 10px;
 }
 
 .icon {
     height: 10px;
     width: 10px;
-    padding-top: 24px;
-    padding-left: 8px;
-    
 }

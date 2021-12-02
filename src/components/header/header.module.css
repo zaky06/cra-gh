@@ -8,6 +8,7 @@
     .logo {
         display: flex;
         justify-content: center;
+        margin: 10px;
     }
 }
 
@@ -16,20 +17,15 @@
     justify-content: center;
     width: 100%;
     background-color: #e44d3a;
-    height: auto
-}
-
-@media screen and (max-width: 576px) {
-    .header {
-        height: auto;
-    }
+    height: auto;
+    min-height: 56px;
+    
 }
 
 
 .container {
     max-width: 1140px;
     width: 100%;
-    height: 56px;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 0px;
@@ -45,10 +41,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px){
     .container {
+        max-width: 960px;
         display: flex;
         justify-content: space-between;
-        padding-left: 5%;
-        padding-right: 5%;
+        height: auto;
+        
     }
 }
 
@@ -61,14 +58,6 @@
 }
 
 
-
-
-@media screen and (min-width: 570px) and (max-width: 767px){
-    .container {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-}
 
 .left {
     display: flex;
@@ -97,15 +86,23 @@
 }
 
 @media screen and (max-width: 576px) {
-    .rigth {
+    .right {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         
     }
 }
 
 .search {
-    box-sizing: border-box;
-    min-width: 400px;
+    width: 276px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 576px){
+    .search {
+        display: flex;
+        justify-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 }

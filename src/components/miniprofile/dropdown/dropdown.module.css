@@ -6,23 +6,20 @@
 }
 
 .action {
-    position: fixed;
-
+    position: absolute;
+    right: 0;
+    z-index: 9;
 }
 
 .action .profile {
-    position: relative;
     overflow: hidden;
     cursor: pointer;
 }
 
 .action .menu {
     background: white;
-    position: absolute;
-    top: 56px;
     width: 238px;
     transition: 0.5s;
-    right: -14px;
     border-radius: 0 0 5px 5px;
 }
 
@@ -41,11 +38,6 @@
     border-bottom: 1px solid #e5e5e5;
 }
 
-.action .menu::before {
-    content: '';
-    position: absolute;
-    transform: rotate(45deg);
-}
 
 .action .menu:active {
     visibility: visible;
@@ -62,7 +54,6 @@ h3 {
 }
 
 label {
-    margin: 10px;
     color: #686868;
 }
 

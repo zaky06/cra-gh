@@ -3,7 +3,8 @@ import { useForm } from "react-hook-form";
 import { form, search, button, img, orangeButton } from "./search.module.css";
 import PropTypes from "prop-types";
 
-export default function Search({ iconSrc, placeholder }) {
+export default function Search(props) {
+  const { iconSrc, placeholder, className } = props;
   const { register, handleSubmit, watch } = useForm();
   const onSubmit = (data) => console.log(data);
 
@@ -11,15 +12,19 @@ export default function Search({ iconSrc, placeholder }) {
   console.log(iconSrc);
 
   return (
-    <form className={form} onSubmit={handleSubmit(onSubmit)}>
+    <form className={form + " " + className} onSubmit={handleSubmit(onSubmit)}>
       <input
         className={search}
         placeholder={placeholder}
         defaultValue=""
         {...register("example")}
       />
-      <button className={!iconSrc ? orangeButton : button} type="submit">
-        {!iconSrc ? <span>Ok</span> : <img className={img} src={iconSrc} />}
+      <button className={!props.iconSrc ? orangeButton : button} type="submit">
+        {!props.iconSrc ? (
+          <span>Ok</span>
+        ) : (
+          <img className={img} src={iconSrc} />
+        )}
       </button>
     </form>
   );
@@ -30,4 +35,5 @@ export default function Search({ iconSrc, placeholder }) {
 Search.propTypes = {
   iconSrc: PropTypes.string,
   placeholder: PropTypes.string,
+  className: PropTypes.string,
 };
