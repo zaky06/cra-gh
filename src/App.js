@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/header/header";
+import Main from "./components/main/main";
 import "./App.css";
 import PropTypes from 'prop-types';
 
@@ -10,6 +11,7 @@ const App = (props) => {
   return (
     <div className="app-wrapper">
       <Header header={props.store.header} />
+      <Main />
     </div>
   );
 };
