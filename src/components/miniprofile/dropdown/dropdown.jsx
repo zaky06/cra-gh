@@ -10,7 +10,7 @@ const Dropdown = () => {
         <h3 className={style.h3Border}>Online Status</h3>
         <Status />
         <h3 className={style.h3Border}>Custom Status</h3>
-        <div className={style.search}>
+        <div className={style.searchSm}>
           <Search />
         </div>
         <h3 className={style.h3Setting}>Settings</h3>
