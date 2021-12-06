@@ -1,3 +1,7 @@
+.wrapper {
+    position: relative;
+}
+
 .container {
     display: flex;
     border-left: 1px solid #dd3e2b;
@@ -5,7 +9,6 @@
     padding: 10px;
     align-items: center;
     cursor: pointer;
-    position: relative;
 }
 
 
@@ -23,7 +26,13 @@
     margin-right: 10px;
 }
 
-.icon {
+.iconSvg {
+    fill: white;
     height: 10px;
     width: 10px;
+    transform: rotate(180deg);
+}
+
+.iconSvgRotated {
+    transform: rotate(0);
 }

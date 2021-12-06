@@ -19,15 +19,15 @@ const ProfileInfo = () => {
             </div>
             </div>
             <ul className={style.userStatus}>
-                <li>
+                <li className={style.userStatusItem}>
                     <h3>Following</h3>
                     <span>34</span>
                 </li>
-                <li>
+                <li className={style.userStatusItem}>
                     <h3>Followers</h3>
                     <span>155</span>
                 </li>
-                <li>
+                <li className={style.userStatusItem}>
                     <a href="">View Profile</a>
                 </li>
             </ul>

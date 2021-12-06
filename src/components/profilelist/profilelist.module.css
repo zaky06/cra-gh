@@ -1,13 +1,12 @@
 .list {
     display: none;
-    padding-top: 13px;
-    padding-left: 10px;
+    fill: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
 }
 
-.img {
-    height: 30px;
-    width: 30px;
-}
 
 @media screen and (max-width: 1200px){
     .list {
