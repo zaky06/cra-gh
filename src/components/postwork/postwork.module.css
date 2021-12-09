@@ -1,0 +1,31 @@
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper {
+    display: flex; 
+}
+
+
+.postImg {
+    padding: 30px;
+}
+
+.postImg img{
+    height: 50px;
+}
+
+/* .flexrow {
+    
+} */
+
+.flexrow a {
+    text-decoration: none;
+    color: black;
+    background-color: #e5e5e5;
+    color: #b2b2b2;
+    padding: 0 15px;
+}
+
