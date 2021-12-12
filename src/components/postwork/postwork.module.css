@@ -2,12 +2,8 @@
     background-color: white;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-
-.wrapper {
-    display: flex; 
-}
-
 
 .postImg {
     padding: 30px;
@@ -17,15 +13,9 @@
     height: 50px;
 }
 
-/* .flexrow {
-    
-} */
-
-.flexrow a {
-    text-decoration: none;
-    color: black;
-    background-color: #e5e5e5;
-    color: #b2b2b2;
-    padding: 0 15px;
+.buttons  {
+    display: flex;
+    align-items: center;
 }
+
 

@@ -6,3 +6,13 @@
 .profileinfo {
     visibility: hidden;
 }
+
+.row {
+    margin-top: 40px;
+}
+
+.block {
+    background-color: gray;
+    margin-top: 20px;
+    min-height: 100px;
+}
