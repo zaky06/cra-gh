@@ -1,9 +1,9 @@
 import React from "react";
-import style from "./postwork.module.css";
+import style from "./actionpost.module.css";
 import { Button } from "react-bootstrap";
 
 // TODO Переименуй в ActionPost
-const PostWork = () => {
+const ActionPost = () => {
     return (
         <div className={style.container}>
             <div className={style.postImg}>
@@ -17,4 +17,4 @@ const PostWork = () => {
     )
 }
 
-export default PostWork;
+export default ActionPost;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import PostWork from "../postwork/postwork";
+import ActionPost from "../actionpost/actionpost";
 import ProfileInfo from "../profileinfo";
 import style from "./main.module.css";
 
@@ -16,7 +16,7 @@ const Main = () => {
                 </Col>
                 <Col xs={12} md={6}>
                      <div className={style.block}>
-                         <PostWork />
+                         <ActionPost />
                      </div>
                      <div className={style.block}>post</div>
                 </Col>
