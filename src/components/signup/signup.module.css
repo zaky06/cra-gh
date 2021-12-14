@@ -1,0 +1,50 @@
+.signup {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+
+.signup img {
+    padding-top: 20px;
+}
+
+.name {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+}
+
+.name1 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.ob {
+    font-size: 14px;
+    text-align: center;
+    color: #686868;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+.border {
+    padding-bottom: 10px;
+}
+
+.border a {
+    text-decoration: none;
+    color: #e44d3a;
+    font-size: 13px;
+}

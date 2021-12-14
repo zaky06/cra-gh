@@ -3,10 +3,6 @@
     flex-direction: row;
 }
 
-.profileinfo {
-    visibility: hidden;
-}
-
 .row {
     margin-top: 40px;
 }

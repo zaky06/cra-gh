@@ -29,7 +29,7 @@ const Main = () => {
                      </div>
                 </Col>
                 <Col xs={12} md={3}>
-                    <div className={style.block}>
+                    <div className={" "}>
                         <SignUp />
                     </div>
                     <div className={style.block}>
