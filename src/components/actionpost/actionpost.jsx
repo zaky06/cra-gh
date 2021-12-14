@@ -9,9 +9,11 @@ const ActionPost = () => {
             <div className={style.postImg}>
                 <img src="https://gambolthemes.net/workwise-new/images/resources/user.png" alt="" />
             </div>
-            <div className={style.buttons}>
-              <Button variant="danger" disabled>Danger</Button>
-              <Button variant="danger">Danger</Button>
+            <div className={style.button1}>
+              <Button variant="danger" disabled>Post a Project</Button>
+            </div>
+            <div className={style.button2}>
+              <Button variant="danger">Post a Job</Button>
             </div>
         </div>
     )
