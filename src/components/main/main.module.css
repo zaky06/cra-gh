@@ -9,6 +9,6 @@
 
 .block {
     background-color: gray;
-    margin-top: 20px;
     min-height: 100px;
+    margin-bottom: 20px;
 }
