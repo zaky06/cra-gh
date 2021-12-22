@@ -11,8 +11,6 @@ const ActionPost = () => {
             </div>
             <div className={style.button1}>
               <Button variant="danger" disabled>Post a Project</Button>
-            </div>
-            <div className={style.button2}>
               <Button variant="danger">Post a Job</Button>
             </div>
         </div>

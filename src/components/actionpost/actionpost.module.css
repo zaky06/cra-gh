@@ -21,11 +21,5 @@
 .button1  {
     display: flex;
     align-items: center;
-    
-}
-
-.button2  {
-    display: flex;
-    align-items: center;
-    
+    padding-right: 25px;
 }
