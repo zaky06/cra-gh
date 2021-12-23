@@ -1,0 +1,150 @@
+.topJobs {
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+
+.topJobs h4 {
+    padding: 15px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.name {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.firstSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgIcon {
+    height: 50px;
+    margin: 15px;
+}
+
+.statusTime {
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.statusTime img {
+    margin-right: 6px;
+    padding-bottom: 4px;
+}
+
+
+.iconSvg {
+    fill: #e5e5e5;
+    height: 20px;
+    width: 20px;
+    transform: rotate(90deg);
+}
+
+.secondSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondSection span {
+    margin-left: 15px;
+}
+
+.wrapper i {
+    background-color: #e44d3a;
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.timeJob {
+    background-color: #51a5fb;
+    width: 80px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 15px;
+    margin-top: 0;
+}
+
+.topJobs a {
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cash {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.lorem p {
+    color: #686868;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.lorem a {
+    color: #e44d3a;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+
+}
+
+.topJobs ul li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.skills li {
+    margin-right: 6px;
+}
+
+.skills li a {
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    padding: 7px 15px;
+    font-weight: 500;
+}
