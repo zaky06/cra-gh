@@ -7,6 +7,9 @@ import Suggestions from "../suggestions";
 import Post from "../post";
 import TopJobs from "../topjobs";
 import style from "./main.module.css";
+import Copyright from "../copyright";
+import Viewed from "../viewed";
+import ViewedPeople from "../viewedpeople";
 
 const Main = () => {
     return (
@@ -18,6 +21,9 @@ const Main = () => {
                     </div>
                     <div className={style.block}>
                         <Suggestions />
+                    </div>
+                    <div className={style.block}>
+                        <Copyright />
                     </div>
                 </Col>
                 <Col xs={12} md={6}>
@@ -34,6 +40,12 @@ const Main = () => {
                     </div>
                     <div className={style.block}>
                         <TopJobs />
+                    </div>
+                    <div className={style.block}>
+                        <Viewed />
+                    </div>
+                    <div className={style.block}>
+                        <ViewedPeople />
                     </div>
                 </Col>
             </Row>

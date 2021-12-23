@@ -61,6 +61,8 @@ h3 {
 
 label {
     color: #686868;
+    padding-left: 7px;
+    font-size: 14px;
 }
 
 .statusForm ul {
