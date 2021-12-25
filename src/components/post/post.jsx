@@ -67,6 +67,24 @@ const Post = () => {
                     <a href="">Wordpress</a>
                 </li>
             </ul>
+            <div className={style.statusBar}>
+                <ul className={style.like}>
+                    <li>
+                        <a href="">
+                            <i className={style.block}>....</i>
+                            Like
+                        </a>
+                        <img src="https://gambolthemes.net/workwise-new/images/liked-img.png" alt="" />
+                        <span>25</span>
+                    </li>
+                    <li>
+                       <a href="">
+                            <i className={style.block}>....</i>  
+                            Comment 15 
+                        </a> 
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }

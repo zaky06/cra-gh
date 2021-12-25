@@ -148,3 +148,35 @@
     padding: 7px 15px;
     font-weight: 500;
 }
+
+.statusBar ul {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.like {
+    display: flex;
+    flex-direction: row;
+}
+
+.like a {
+    color: #b2b2b2;
+    margin-right: 5px;
+}
+
+.like li span {
+    background-color: #e44d3a;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    color: white;
+    margin-left: -25px;
+}
+
+.block {
+    background-color: #686868;
+    color: #686868;
+    margin-right: 5px;
+}
+

@@ -18,8 +18,12 @@
     height: 50px;
 }
 
-.button1  {
+.buttons {
     display: flex;
     align-items: center;
     padding-right: 25px;
+}
+
+.button {
+    margin-right: 30px;
 }
