@@ -1,15 +1,49 @@
 import React from "react";``
 import style from "./suggestions.module.css";
 import { Button } from "react-bootstrap";
-import { BsFillAlarmFill } from "react-icons/bs";
+// import { BsFillArchiveFill } from "react-icons/bs";
 
 const userData = [
     {
         src: 'https://gambolthemes.net/workwise-new/images/resources/s1.png',
         name: 'Jessica William',
         description: 'Graphic Designer'
-    }
+    },
+    {
+        src: 'https://gambolthemes.net/workwise-new/images/resources/s2.png',
+        name: 'John Doe',
+        description: 'PHP Developer'
+    },
+    {
+        src: 'https://gambolthemes.net/workwise-new/images/resources/s3.png',
+        name: 'Poonam',
+        description: 'Wordpress Developer'
+    },
+    {
+        src: 'https://gambolthemes.net/workwise-new/images/resources/s3.png',
+        name: 'Bill Gates',
+        description: 'C / C++ Developer'
+    },
+    {
+        src: 'https://gambolthemes.net/workwise-new/images/resources/s5.png',
+        name: 'Jessica William',
+        description: 'Graphic Designer'
+    },
+    {
+        src: 'https://gambolthemes.net/workwise-new/images/resources/s6.png',
+        name: 'John Doe',
+        description: 'PHP Developer'
+    },
 ]
+
+/* 
+Icon: {
+    children?: React.ReactNode;
+    size?: string | number;
+    color?: string;
+    title?: string;
+}
+*/
 
 const Suggestions = () => {
 
@@ -25,7 +59,7 @@ const Suggestions = () => {
                 </div>
                 <div>
                     <Button size="sm" className={style.button} variant="outline-danger">+</Button>
-                    <BsFillAlarmFill />
+                    {/* <BsFillArchiveFill size='14' color='red' title='icon title'> deded </BsFillArchiveFill> */}
                 </div>
             </div>
             )
@@ -42,54 +76,6 @@ const Suggestions = () => {
             </div>
 
             {items}
-
-            <div className={style.secondSection}>
-                <img src="https://gambolthemes.net/workwise-new/images/resources/s1.png" alt="" />
-                <div className={style.nameAndJob}>
-                    <h4>Jessica William</h4>
-                    <p>Graphic Designer</p>
-                </div>
-            </div>
-            <div className={style.secondSection}>
-                <img src="https://gambolthemes.net/workwise-new/images/resources/s2.png" alt="" />
-                <div className={style.nameAndJob}>
-                    <h4>John Doe</h4>
-                    <p>PHP Developer</p>
-                </div>
-                <span></span>
-            </div>
-            <div className={style.secondSection}>
-                <img src="https://gambolthemes.net/workwise-new/images/resources/s3.png" alt="" />
-                <div className={style.nameAndJob}>
-                    <h4>Poonam</h4>
-                    <p>Wordpress Developer</p>
-                </div>
-                <span></span>
-            </div>
-            <div className={style.secondSection}>
-                <img src="https://gambolthemes.net/workwise-new/images/resources/s3.png" alt="" />
-                <div className={style.nameAndJob}>
-                    <h4>Bill Gates</h4>
-                    <p>C / C++ Developer</p>
-                </div>
-                <span></span>
-            </div>
-            <div className={style.secondSection}>
-                <img src="https://gambolthemes.net/workwise-new/images/resources/s5.png" alt="" />
-                <div className={style.nameAndJob}>
-                    <h4>Jessica William</h4>
-                    <p>Graphic Designer</p>
-                </div>
-                
-            </div>
-            <div className={style.secondSection}>
-                <img src="https://gambolthemes.net/workwise-new/images/resources/s6.png" alt="" />
-                <div className={style.nameAndJob}>
-                    <h4>John Doe</h4>
-                    <p>PHP Developer</p>
-                </div>
-                <span></span>
-            </div>
             <a href="">View More</a>
         </div>
     )

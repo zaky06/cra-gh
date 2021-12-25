@@ -1,7 +1,9 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { form, search, button, img, orangeButton } from "./search.module.css";
+import styles from "./search.module.css";
 import PropTypes from "prop-types";
+
+const { form, search, button, img, orangeButton } = styles; 
 
 export default function Search(props) {
   const { iconSrc, placeholder, className } = props;
