@@ -70,12 +70,23 @@
     margin-left: 15px;
 }
 
-.wrapper i {
-    background-color: #e44d3a;
-    height: 25px;
-    width: 25px;
+.wrapper i button {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 33px;
     margin: 10px;
     margin-top: 0;
+    align-items: center;
+    color: white;
+}
+
+.firColor {
+    background-color: #53d690;
+}
+
+.secColor {
+    background-color: #e44d3a;
 }
 
 .wrapper2 {
@@ -150,13 +161,17 @@
 }
 
 .statusBar ul {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 15px;
     margin: 0;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .like {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .like a {
@@ -164,19 +179,36 @@
     margin-right: 5px;
 }
 
-.like li span {
-    background-color: #e44d3a;
-    border-radius: 30px;
-    width: 30px;
-    height: 30px;
-    font-size: 13px;
-    color: white;
-    margin-left: -25px;
+.like a:hover {
+    color: #e44d3a;
+    transition: 1s;
 }
 
-.block {
-    background-color: #686868;
-    color: #686868;
+
+.like li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.like li span {
+
+    background-color: #e44d3a;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    margin-left: -25px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
 }
 
+.like li a i {
+    margin-right: 5px;
+}
+
+.flexRow {
+    display: flex;
+}

@@ -1,0 +1,57 @@
+.topProfiles {
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+
+.name {
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.iconSvg {
+    fill: #e5e5e5;
+    height: 20px;
+    width: 20px;
+    transform: rotate(90deg);
+}
+
+.secondSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.secondSection p {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info {
+    color: #686868;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

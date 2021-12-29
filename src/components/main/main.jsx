@@ -10,6 +10,7 @@ import style from "./main.module.css";
 import Copyright from "../copyright";
 import Viewed from "../viewed";
 import ViewedPeople from "../viewedpeople";
+import TopProfiles from "../topprofiles";
 
 const Main = () => {
     return (
@@ -32,6 +33,9 @@ const Main = () => {
                      </div>
                      <div className={style.block}>
                          <Post />
+                     </div>
+                     <div className={style.block}>
+                         <TopProfiles />
                      </div>
                 </Col>
                 <Col xs={12} md={3}>

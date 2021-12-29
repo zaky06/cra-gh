@@ -1,5 +1,10 @@
 import React from "react";
 import style from "./post.module.css";
+import { BsFillBookmarkFill } from 'react-icons/bs';
+import { BsEnvelope } from 'react-icons/bs';
+import { BsSuitHeartFill } from 'react-icons/bs';
+import { BsChatLeftFill } from 'react-icons/bs';
+import { BsEyeFill } from 'react-icons/bs';
 
 
 
@@ -33,8 +38,16 @@ const Post = () => {
                     </span>
                 </div>
                 <div className={style.wrapper}>
-                    <i></i>
-                    <i></i>
+                    <i>
+                        <button className={style.firColor}>
+                        <BsFillBookmarkFill />
+                        </button>
+                    </i>
+                    <i>
+                        <button className={style.secColor}>
+                        <BsEnvelope />
+                        </button>
+                    </i>
                 </div>
             </div>
             <h4>Senior Wordpress Developer</h4>
@@ -69,9 +82,12 @@ const Post = () => {
             </ul>
             <div className={style.statusBar}>
                 <ul className={style.like}>
+                    <div className={style.flexRow}>
                     <li>
                         <a href="">
-                            <i className={style.block}>....</i>
+                            <i>
+                            <BsSuitHeartFill />
+                            </i>
                             Like
                         </a>
                         <img src="https://gambolthemes.net/workwise-new/images/liked-img.png" alt="" />
@@ -79,10 +95,23 @@ const Post = () => {
                     </li>
                     <li>
                        <a href="">
-                            <i className={style.block}>....</i>  
+                            <i>
+                            <BsChatLeftFill />
+                            </i>
                             Comment 15 
                         </a> 
                     </li>
+                    </div>
+                    <div className={style.flexRow}>
+                        <li>
+                            <a href="">
+                                <i>
+                                <BsEyeFill />
+                                </i>
+                                Views 50
+                            </a>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
