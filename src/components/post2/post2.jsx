@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./post.module.css";
+import style from "./post2.module.css";
 import { BsFillBookmarkFill } from 'react-icons/bs';
 import { BsEnvelope } from 'react-icons/bs';
 import { BsSuitHeartFill } from 'react-icons/bs';
@@ -8,7 +8,7 @@ import { BsEyeFill } from 'react-icons/bs';
 
 
 
-const Post = () => {
+const Post2 = () => {
     return (
         <div className={style.topJobs}>
             <div className={style.firstSection}>
@@ -43,11 +43,15 @@ const Post = () => {
                         <BsFillBookmarkFill />
                         </button>
                     </i>
-                    <i className={style.dvigenie}>
+                    <i>
                         <button className={style.secColor}>
                         <BsEnvelope />
                         </button>
                     </i>
+                    <div className={style.bid}>
+                         <a href="">Bid Now</a>
+                    </div>
+                    
                 </div>
             </div>
             <h4>Senior Wordpress Developer</h4>
@@ -118,4 +122,4 @@ const Post = () => {
     )
 }
 
-export default Post;
+export default Post2;

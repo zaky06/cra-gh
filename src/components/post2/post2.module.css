@@ -89,10 +89,6 @@
     background-color: #e44d3a;
 }
 
-.dvigenie {
-    padding-right: 10px;
-}
-
 .wrapper2 {
     display: flex;
     flex-direction: row;
@@ -215,4 +211,23 @@
 
 .flexRow {
     display: flex;
+}
+
+.bid {
+    display: flex;
+    background-color: #51a5fb;
+    text-align: center;
+    border-radius: 3px;
+    align-items: center;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.bid a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 13px;
 }
