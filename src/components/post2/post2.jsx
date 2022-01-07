@@ -85,38 +85,28 @@ const Post2 = () => {
                 </li>
             </ul>
             <div className={style.statusBar}>
-                <ul className={style.like}>
-                    <div className={style.flexRow}>
-                    <li>
-                        <a href="">
-                            <i>
+                <div className={style.wrapper3}>
+                    <span>
+                        <button className={style.likeButton}>
                             <BsSuitHeartFill />
-                            </i>
-                            Like
-                        </a>
-                        <img src="https://gambolthemes.net/workwise-new/images/liked-img.png" alt="" />
-                        <span>25</span>
-                    </li>
-                    <li>
-                       <a href="">
-                            <i>
+                            <p>Like</p>
+                        </button>
+                    </span>
+                    <img src="https://gambolthemes.net/workwise-new/images/liked-img.png" alt="" />
+                    <span className={style.numberLike}>25</span>
+                    <span>
+                        <button className={style.likeButton}>
                             <BsChatLeftFill />
-                            </i>
-                            Comment 15 
-                        </a> 
-                    </li>
-                    </div>
-                    <div className={style.flexRow}>
-                        <li>
-                            <a href="">
-                                <i>
-                                <BsEyeFill />
-                                </i>
-                                Views 50
-                            </a>
-                        </li>
-                    </div>
-                </ul>
+                            <p>Comment 15</p>
+                        </button>
+                    </span>
+                </div>
+                <div className={style.wrapper3}>
+                    <span className={style.likeButton}>
+                        <BsEyeFill />
+                        <p>Views 50</p>
+                    </span>
+                </div>
             </div>
         </div>
     )

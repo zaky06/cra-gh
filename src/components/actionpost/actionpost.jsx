@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./actionpost.module.css";
-import { Button } from "react-bootstrap";
 
 // TODO Переименуй в ActionPost
 const ActionPost = () => {
@@ -10,8 +9,8 @@ const ActionPost = () => {
                 <img src="https://gambolthemes.net/workwise-new/images/resources/user-pic.png" alt="" />
             </div>
             <div className={style.buttons}>
-              <Button className={style.button} variant="danger" disabled>Post a Project</Button>
-              <Button variant="danger">Post a Job</Button>
+              <button className={style.button1}>Post a Project</button>
+              <button className={style.button2}>Post a Job</button>
             </div>
         </div>
     )

@@ -24,6 +24,22 @@
     padding-right: 25px;
 }
 
-.button {
-    margin-right: 30px;
+.buttons button {
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 500;
+    border-radius: 3px;
 }
+
+.button1 {
+    margin-right: 15px;
+    color: #b2b2b2;
+    background-color: #e5e5e5;
+}
+
+.button2 {
+    background-color: #e44d3a;
+    color: white;
+}
+
