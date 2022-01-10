@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
 import ActionPost from "../actionpost/actionpost";
 import ProfileInfo from "../profileinfo";
@@ -12,8 +13,9 @@ import Viewed from "../viewed";
 import ViewedPeople from "../viewedpeople";
 import TopProfiles from "../topprofiles";
 import Post2 from "../post2";
+import PostComments from "../post-comments/post-comments";
 
-const Main = () => {
+const Main = (props) => {
     return (
         <Container>
             <Row className={style.row}>
@@ -22,7 +24,7 @@ const Main = () => {
                         <ProfileInfo />
                     </div>
                     <div className={style.block}>
-                        <Suggestions />
+                        <Suggestions users={props.users} />
                     </div>
                     <div className={style.block}>
                         <Copyright />
@@ -36,10 +38,13 @@ const Main = () => {
                          <Post />
                      </div>
                      <div className={style.block}>
-                         <TopProfiles />
+                         <TopProfiles users={props.users}/>
                      </div>
                      <div className={style.block}>
                          <Post2 />
+                     </div>
+                     <div className={style.block}>
+                         <PostComments />
                      </div>
                 </Col>
                 <Col xs={12} md={3}>
@@ -59,6 +64,18 @@ const Main = () => {
             </Row>
         </Container>
     )
+}
+
+const usersType = PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string,
+      name: PropTypes.string,
+      description: PropTypes.string,
+    })
+  );
+
+Main.propTypes = {
+    users: usersType
 }
 
 export default Main;

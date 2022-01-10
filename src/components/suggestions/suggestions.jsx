@@ -1,65 +1,22 @@
-import React from "react";``
+import React from "react";
+import PropTypes from "prop-types";
 import style from "./suggestions.module.css";
 import { Button } from "react-bootstrap";
-// import { BsFillArchiveFill } from "react-icons/bs";
 
-const userData = [
-    {
-        src: 'https://gambolthemes.net/workwise-new/images/resources/s1.png',
-        name: 'Jessica William',
-        description: 'Graphic Designer'
-    },
-    {
-        src: 'https://gambolthemes.net/workwise-new/images/resources/s2.png',
-        name: 'John Doe',
-        description: 'PHP Developer'
-    },
-    {
-        src: 'https://gambolthemes.net/workwise-new/images/resources/s3.png',
-        name: 'Poonam',
-        description: 'Wordpress Developer'
-    },
-    {
-        src: 'https://gambolthemes.net/workwise-new/images/resources/s3.png',
-        name: 'Bill Gates',
-        description: 'C / C++ Developer'
-    },
-    {
-        src: 'https://gambolthemes.net/workwise-new/images/resources/s5.png',
-        name: 'Jessica William',
-        description: 'Graphic Designer'
-    },
-    {
-        src: 'https://gambolthemes.net/workwise-new/images/resources/s6.png',
-        name: 'John Doe',
-        description: 'PHP Developer'
-    },
-]
+const Suggestions = (props) => {
 
-/* 
-Icon: {
-    children?: React.ReactNode;
-    size?: string | number;
-    color?: string;
-    title?: string;
-}
-*/
-
-const Suggestions = () => {
-
-    const items = userData.map(((item, index) => {
+    const users = props.users.map(((user, index) => {
         return ( 
             <div key={index} className={style.secondSection}>
                 <div className={style.information}>
-                    <img src={item.src} alt="" />
+                    <img src={user.src} alt="" />
                     <div className={style.nameAndJob}>
-                        <h4>{item.name}</h4>
-                        <p>{item.description}</p>
+                        <h4>{user.name}</h4>
+                        <p>{user.description}</p>
                     </div>
                 </div>
                 <div>
                     <Button size="sm" className={style.button} variant="outline-danger">+</Button>
-                    {/* <BsFillArchiveFill size='14' color='red' title='icon title'> deded </BsFillArchiveFill> */}
                 </div>
             </div>
             )
@@ -75,10 +32,23 @@ const Suggestions = () => {
                 </svg>
             </div>
 
-            {items}
+            {users}
             <a href="">View More</a>
         </div>
     )
 }
 
+const usersType = PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string,
+      name: PropTypes.string,
+      description: PropTypes.string,
+    })
+  );
+
+Suggestions.propTypes = {
+    users: usersType
+}
+
 export default Suggestions;
+

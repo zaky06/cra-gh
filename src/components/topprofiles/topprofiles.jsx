@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import style from "./topprofiles.module.css"
 import TopProfile from "../top-profile";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const TopProfiles = () => {
+const TopProfiles = (props) => {
 
     const responsive = {
         desktop: {
@@ -31,13 +32,16 @@ const TopProfiles = () => {
             </div>
             <div className={style.carusel}>
             <Carousel responsive={responsive}>
-                <div><TopProfile /></div>
-                <div><TopProfile /></div>
-                <div><TopProfile /></div>
-                <div><TopProfile /></div>
-                <div><TopProfile /></div>
-                <div><TopProfile /></div>
-                <div><TopProfile /></div>
+              {
+                props.users.map((user, index) => {
+
+                  return (
+                    <div key={index}>
+                      <TopProfile users={props.users} />
+                    </div>
+                  )
+                }) 
+              }
             </Carousel>
             </div>
         </div>
@@ -45,3 +49,15 @@ const TopProfiles = () => {
 }
 
 export default TopProfiles;
+
+const usersType = PropTypes.arrayOf(
+  PropTypes.shape({
+    src: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.string,
+  })
+);
+
+TopProfiles.propTypes = {
+  users: usersType
+}

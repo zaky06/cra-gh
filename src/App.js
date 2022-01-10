@@ -5,6 +5,23 @@ import Header from "./components/header/header";
 import Main from "./components/main/main";
 import "./App.css";
 
+const App = (props) => {
+  return (
+    <div className="app-wrapper">
+      <Header header={props.store.header} />
+      <Main className="main" users={props.store.users} />
+    </div>
+  );
+};
+
+const usersType = PropTypes.arrayOf(
+  PropTypes.shape({
+    src: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.string,
+  })
+);
+
 export const navType = PropTypes.arrayOf(
   PropTypes.shape({
     id: PropTypes.number,
@@ -13,17 +30,11 @@ export const navType = PropTypes.arrayOf(
   })
 );
 
-const App = (props) => {
-  return (
-    <div className="app-wrapper">
-      <Header header={props.store.header} />
-      <Main className="main" />
-    </div>
-  );
-};
-
 App.propTypes = {
-  store: PropTypes.shape({ header: { nav: navType, search: navType } }),
+  store: PropTypes.shape({
+    header: { nav: navType, search: navType },
+    users: usersType,
+  }),
 };
 
 export default App;
