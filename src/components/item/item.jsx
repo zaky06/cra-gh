@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 const Item = (props) => {
 
-    console.log(props);
     return (
             <li className={style.item}>
                 <a className={style.link} href="">

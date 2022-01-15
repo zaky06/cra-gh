@@ -14,7 +14,7 @@ const App = (props) => {
   );
 };
 
-const usersType = PropTypes.arrayOf(
+export const usersType = PropTypes.arrayOf(
   PropTypes.shape({
     src: PropTypes.string,
     name: PropTypes.string,

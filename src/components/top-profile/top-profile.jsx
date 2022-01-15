@@ -23,6 +23,7 @@ const TopProfile = (props) => {
         </div>
     )
 }
+    
 
 const usersType = PropTypes.arrayOf(
     PropTypes.shape({
@@ -32,8 +33,9 @@ const usersType = PropTypes.arrayOf(
     })
   );
 
-TopProfile.PropTypes = {
+TopProfile.propTypes = {
     users: usersType
-};
+    
+}
 
 export default TopProfile;

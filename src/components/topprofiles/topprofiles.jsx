@@ -34,10 +34,9 @@ const TopProfiles = (props) => {
             <Carousel responsive={responsive}>
               {
                 props.users.map((user, index) => {
-
                   return (
                     <div key={index}>
-                      <TopProfile users={props.users} />
+                      <TopProfile users={user} />
                     </div>
                   )
                 }) 
@@ -47,8 +46,6 @@ const TopProfiles = (props) => {
         </div>
     )
 }
-
-export default TopProfiles;
 
 const usersType = PropTypes.arrayOf(
   PropTypes.shape({
@@ -61,3 +58,6 @@ const usersType = PropTypes.arrayOf(
 TopProfiles.propTypes = {
   users: usersType
 }
+
+export default TopProfiles;
+
