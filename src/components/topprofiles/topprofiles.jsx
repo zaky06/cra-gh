@@ -36,7 +36,7 @@ const TopProfiles = (props) => {
                 </svg>
             </div>
             <div className={style.carusel}>
-            <Carousel renderButtonGroupOutside={true} arrows={false} customButtonGroup={<NavButtons />} responsive={responsive}>
+            <Carousel infinite={true} renderButtonGroupOutside={true} arrows={false} customButtonGroup={<NavButtons />} responsive={responsive}>
               {
                 props.users.map((user, index) => {
                   return (
