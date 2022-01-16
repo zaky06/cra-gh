@@ -1,5 +1,6 @@
 :root {
-  tablet: (min-width: 990px) and (max-width: 1200px)
+  --tablet: (min-width: 990px) and (max-width: 1200px);
+  --main-color: #e44d3a;
 }
 
 .app-wrapper {

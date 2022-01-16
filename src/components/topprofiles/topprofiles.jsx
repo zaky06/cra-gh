@@ -4,6 +4,9 @@ import style from "./topprofiles.module.css"
 import TopProfile from "../top-profile";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import NavButtons from "./nav-buttons";
+
+
 
 const TopProfiles = (props) => {
 
@@ -21,6 +24,8 @@ const TopProfiles = (props) => {
           items: 3
         }
       };
+
+      
     
     return (
         <div className={style.topProfiles}>
@@ -31,12 +36,12 @@ const TopProfiles = (props) => {
                 </svg>
             </div>
             <div className={style.carusel}>
-            <Carousel responsive={responsive}>
+            <Carousel renderButtonGroupOutside={true} arrows={false} customButtonGroup={<NavButtons />} responsive={responsive}>
               {
                 props.users.map((user, index) => {
                   return (
                     <div key={index}>
-                      <TopProfile users={user} />
+                      <TopProfile user={user} />
                     </div>
                   )
                 }) 

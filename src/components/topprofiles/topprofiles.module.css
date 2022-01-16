@@ -3,6 +3,7 @@
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
     border-top: 1px solid #e5e5e5;
+    position: relative;
 }
 
 .name {
@@ -57,4 +58,41 @@
 }
 .carusel {
     margin: 20px;
+}
+
+.navButtons {
+    position: absolute;
+    border-radius: 50%;
+    height: 30px; 
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    top: 50%;
+    color: #b7b7b7;
+    background-color: white;
+    border-color: transparent; 
+    font-size: 23px;
+}
+
+.navButtons:hover {
+    transition-duration: 0.4s;
+    color: white;
+    background-color: var(--main-color);
+    border-color: transparent;
+}
+
+.navButtons:focus {
+    box-shadow: none;
+}
+
+.previous {
+    left: -15px;
+    padding-right: 4px;
+}
+
+.next {
+    right: -15px;
+
 }

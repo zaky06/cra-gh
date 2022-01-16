@@ -6,8 +6,6 @@ import { BsSuitHeartFill } from 'react-icons/bs';
 import { BsChatLeftFill } from 'react-icons/bs';
 import { BsEyeFill } from 'react-icons/bs';
 
-
-
 const Post = () => {
     return (
         <div className={style.topJobs}>

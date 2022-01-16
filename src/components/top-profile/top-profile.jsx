@@ -4,14 +4,14 @@ import { BsEnvelope } from 'react-icons/bs';
 import PropTypes from "prop-types";
 
 const TopProfile = (props) => {
-    console.log(props.users)
+    console.log(props.user)
     return (
         <div className={style.placeholder}>
             <div className={style.profileImg}>
-                  <img src={props.users.src} alt="" />
+                  <img src={props.user.src} alt="" />
             </div>
-            <p>{props.users.name}</p>
-            <span>{props.users.description}</span>
+            <p>{props.user.name}</p>
+            <span>{props.user.description}</span>
             <div className={style.wrapper}>
                 <button className={style.colorButton}>Follow</button>
                 <button className={style.secColor}>
@@ -34,7 +34,7 @@ const usersType = PropTypes.arrayOf(
   );
 
 TopProfile.propTypes = {
-    users: usersType
+    user: usersType
     
 }
 

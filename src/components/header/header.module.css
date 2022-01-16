@@ -16,12 +16,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: #e44d3a;
+    background-color: var(--main-color);
     height: auto;
     min-height: 56px;
-    
 }
-
 
 .container {
     max-width: 1140px;
