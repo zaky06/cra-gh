@@ -76,5 +76,5 @@
 .lastButton:hover {
     background-color: #e44d3a;
     color: white;
-    transition: 1s;
+    transition-duration: 0.4s;
 }

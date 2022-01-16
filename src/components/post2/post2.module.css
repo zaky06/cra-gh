@@ -190,7 +190,7 @@
 
 .likeButton:hover {
     color: #e44d3a;
-    transition: 1s;
+    transition-duration: 0.4s;
 }
 
 .numberLike {
