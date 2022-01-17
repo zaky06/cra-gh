@@ -16,7 +16,7 @@
 }
 
 .copyright a:hover {
-    color:#e44d3a;
+    color:var(--main-color);
     transition-duration: 0.4s;
 }
 
