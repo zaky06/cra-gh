@@ -1,7 +1,7 @@
 import React from "react";``
 import style from "./viewedpeople.module.css";
 import { Button } from "react-bootstrap";
-// import { BsFillArchiveFill } from "react-icons/bs";
+import { AiOutlinePlus } from 'react-icons/ai';
 
 const userData = [
     {
@@ -58,7 +58,7 @@ const ViewedPeople = () => {
                     </div>
                 </div>
                 <div>
-                    <Button size="sm" className={style.button} variant="outline-danger">+</Button>
+                    <Button size="sm" className={style.button} variant="outline-danger"><AiOutlinePlus/></Button>
                     {/* <BsFillArchiveFill size='14' color='red' title='icon title'> deded </BsFillArchiveFill> */}
                 </div>
             </div>

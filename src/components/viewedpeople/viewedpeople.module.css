@@ -84,4 +84,18 @@
 
 .button {
     margin: 15px;
+    border-color: #e5e5e5;
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.button:focus {
+    box-shadow: none;
+}
+
+.button:hover {
+    transition-duration: 0.4s;
+    color: white;
+    background-color: var(--main-color);
+    border-color: transparent;
 }

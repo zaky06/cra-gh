@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import style from "./suggestions.module.css";
 import { Button } from "react-bootstrap";
+import { AiOutlinePlus } from 'react-icons/ai';
 
 const Suggestions = (props) => {
 
@@ -16,7 +17,7 @@ const Suggestions = (props) => {
                     </div>
                 </div>
                 <div>
-                    <Button size="sm" className={style.button} variant="outline-danger">+</Button>
+                    <Button size="sm" className={style.button} variant="outline-danger"><AiOutlinePlus/></Button>
                 </div>
             </div>
             )
