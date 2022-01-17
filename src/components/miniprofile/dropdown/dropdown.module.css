@@ -90,6 +90,7 @@ label {
 .searchSm input {
     background-color: #f2f2f2;
     height: 35px;
+    z-index: 9;
 }
 
 .setting a {

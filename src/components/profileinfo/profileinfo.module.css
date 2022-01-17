@@ -9,7 +9,7 @@
 }
 
 .firstS {
-    background-color: #e44d3a;
+    background-color: var(--main-color);
     
 }
 
@@ -77,5 +77,5 @@
 
 .userStatusItem a {
     text-decoration: none;
-    color: #e44d3a;
+    color: var(--main-color);
 }

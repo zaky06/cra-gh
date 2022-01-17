@@ -86,7 +86,7 @@
 }
 
 .secColor {
-    background-color: #e44d3a;
+    background-color: var(--main-color);
 }
 
 .wrapper2 {
@@ -129,7 +129,7 @@
 }
 
 .lorem a {
-    color: #e44d3a;
+    color: var(--main-color);
     font-weight: 600;
     padding-left: 15px;
 }
@@ -189,14 +189,14 @@
 }
 
 .likeButton:hover {
-    color: #e44d3a;
+    color: var(--main-color);
     transition-duration: 0.4s;
 }
 
 .numberLike {
     margin-left: -25px;
     display: flex;
-    background-color: #e44d3a;
+    background-color: var(--main-color);
     color: white;
     width: 30px;
     height: 30px;

@@ -45,6 +45,6 @@
 
 .border a {
     text-decoration: none;
-    color: #e44d3a;
+    color: var(--main-color);
     font-size: 13px;
 }

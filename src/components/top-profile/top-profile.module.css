@@ -53,7 +53,7 @@
 }
 
 .secColor {
-    background-color: #e44d3a;
+    background-color: var(--main-color);
 }
 
 .blueButton {
@@ -74,7 +74,7 @@
 }
 
 .lastButton:hover {
-    background-color: #e44d3a;
+    background-color: var(--main-color);
     color: white;
     transition-duration: 0.4s;
 }
