@@ -4,16 +4,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import ActionPost from "../actionpost/actionpost";
 import ProfileInfo from "../profileinfo";
 import SignUp from "../signup";
-import Suggestions from "../suggestions";
 import Post from "../post";
 import TopJobs from "../topjobs";
 import style from "./main.module.css";
 import Copyright from "../copyright";
 import Viewed from "../viewed";
-import ViewedPeople from "../viewedpeople";
 import TopProfiles from "../topprofiles";
 import Post2 from "../post2";
 import PostComments from "../post-comments/post-comments";
+import AddFriend from "../add-friend";
 
 const Main = (props) => {
     return (
@@ -24,7 +23,7 @@ const Main = (props) => {
                         <ProfileInfo />
                     </div>
                     <div className={style.block}>
-                        <Suggestions users={props.users} />
+                        <AddFriend users={props.users} title={"Suggesions"}/>
                     </div>
                     <div className={style.block}>
                         <Copyright />
@@ -58,7 +57,7 @@ const Main = (props) => {
                         <Viewed />
                     </div>
                     <div className={style.block}>
-                        <ViewedPeople />
+                        <AddFriend users={props.users} title={"Most Viewed People"}/>
                     </div>
                 </Col>
             </Row>

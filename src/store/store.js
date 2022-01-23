@@ -74,6 +74,14 @@ const store = {
       description: "PHP Developer",
     },
   ],
+  jobs: [
+    {
+      name: "Software Developer",
+      description: "lorem",
+      salary: "$25/hr",
+      url: "google.com",
+    },
+  ],
 };
 
 export default store;
