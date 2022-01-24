@@ -47,6 +47,7 @@ export const postsType = PropTypes.arrayOf(
     position: PropTypes.string,
     description: PropTypes.string,
     salary: PropTypes.string,
+    isAvaible: PropTypes.bool,
   })
 );
 

@@ -114,8 +114,18 @@ const store = {
       position: "Senior Wordpress Developer",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...",
       salary: "$30 / hr",
+      src: "https://gambolthemes.net/workwise-new/images/resources/user-pic.png"
     },
-    
+    {
+      name: "Lili Boba",
+      rank: "Vonuci Coder",
+      location: "Arabic",
+      position: "Senior Wordpress Developer",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...",
+      salary: "$110 / hr",
+      isAvaible: true,
+      src: "https://gambolthemes.net/workwise-new/images/resources/us-pc2.png"
+    },
   ],
 };
 

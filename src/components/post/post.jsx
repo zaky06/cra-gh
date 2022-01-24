@@ -14,7 +14,7 @@ const Post = (props) => {
         <div className={style.topJobs}>
             <div className={style.firstSection}>
                 <div className={style.wrapper}>
-                    <img className={style.imgIcon} src="https://gambolthemes.net/workwise-new/images/resources/user-pic.png" alt="" />
+                    <img className={style.imgIcon} src={props.post.src} alt="" />
                     <div>
                     <h3 className={style.name}>{props.post.name}</h3>
                     <span className={style.statusTime}>
@@ -49,6 +49,13 @@ const Post = (props) => {
                         <BsEnvelope />
                         </button>
                     </i>
+                    {props.post.isAvaible ? (
+                        <div className={style.bid}>
+                         <a href="">Bid Now</a>
+                        </div>
+                    ) : (
+                        null
+                    )}
                 </div>
             </div>
             <h4>{props.post.position}</h4>
@@ -117,10 +124,12 @@ const postsType = PropTypes.arrayOf(
         position: PropTypes.string,
         description: PropTypes.string,
         salary: PropTypes.string,
+        isAvaible: PropTypes.bool,
+        src: PropTypes.string,
     })
 )
 
-Post.PropTypes = {
+Post.propTypes = {
     post: postsType
 }
 

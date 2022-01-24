@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Post from "../post/post";
+import style from "./posts.module.css"
 
 
 const Posts = (props) => {
     return (
-        <div>
+        <div className={style.posts}>
             {
               props.posts.map((post, index) => {
                 return (
@@ -20,18 +21,20 @@ const Posts = (props) => {
 }
 
 const postsType = PropTypes.arrayOf(
-    PropTypes.shape({
-        name: PropTypes.string,
-        rank: PropTypes.string,
-        location: PropTypes.string,
-        position: PropTypes.string,
-        description: PropTypes.string,
-        salary: PropTypes.string,
-    })
+  PropTypes.shape({
+    name: PropTypes.string,
+    rank: PropTypes.string,
+    location: PropTypes.string,
+    position: PropTypes.string,
+    description: PropTypes.string,
+    salary: PropTypes.string,
+    isAvaible: PropTypes.bool,
+    src: PropTypes.string,
+  })
 );
 
-Posts.PropTypes = {
-    posts: postsType
+Posts.propTypes = {
+  posts: postsType
 }
 
 export default Posts;

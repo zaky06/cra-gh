@@ -9,7 +9,6 @@ import Jobs from "../jobs";
 import style from "./main.module.css";
 import Copyright from "../copyright";
 import TopProfiles from "../topprofiles";
-import Post2 from "../post2";
 import PostComments from "../post-comments/post-comments";
 import AddFriend from "../add-friend";
 
@@ -33,13 +32,13 @@ const Main = (props) => {
                          <ActionPost />
                      </div>
                      <div className={style.block}>
-                         <Posts posts={props.posts} />
+                         <Posts posts={props.posts.slice(0, 1)} />
                      </div>
                      <div className={style.block}>
                          <TopProfiles users={props.users}/>
                      </div>
                      <div className={style.block}>
-                         <Post2 />
+                         <Posts posts={props.posts.slice(1, 3)}/>
                      </div>
                      <div className={style.block}>
                          <PostComments />
@@ -89,6 +88,8 @@ const postsType = PropTypes.arrayOf(
       position: PropTypes.string,
       description: PropTypes.string,
       salary: PropTypes.string,
+      isAvaible: PropTypes.bool,
+      src: PropTypes.string,
     })
   );
 
