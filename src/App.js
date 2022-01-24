@@ -9,7 +9,7 @@ const App = (props) => {
   return (
     <div className="app-wrapper">
       <Header header={props.store.header} />
-      <Main className="main" users={props.store.users} />
+      <Main className="main" users={props.store.users} jobs={props.store.jobs} posts={props.store.posts} />
     </div>
   );
 };
@@ -30,10 +30,32 @@ export const navType = PropTypes.arrayOf(
   })
 );
 
+export const jobsType = PropTypes.arrayOf(
+  PropTypes.shape({
+    position: PropTypes.string,
+    description: PropTypes.string,
+    salary: PropTypes.string,
+    url: PropTypes.string,
+  })
+);
+
+export const postsType = PropTypes.arrayOf(
+  PropTypes.shape({
+    name: PropTypes.string,
+    rank: PropTypes.string,
+    location: PropTypes.string,
+    position: PropTypes.string,
+    description: PropTypes.string,
+    salary: PropTypes.string,
+  })
+);
+
 App.propTypes = {
   store: PropTypes.shape({
     header: { nav: navType, search: navType },
     users: usersType,
+    jobs: jobsType,
+    posts : postsType,
   }),
 };
 

@@ -1,19 +1,22 @@
 import React from "react";
 import style from "./post.module.css";
+import PropTypes from "prop-types";
 import { BsFillBookmarkFill } from 'react-icons/bs';
 import { BsEnvelope } from 'react-icons/bs';
 import { BsSuitHeartFill } from 'react-icons/bs';
 import { BsChatLeftFill } from 'react-icons/bs';
 import { BsEyeFill } from 'react-icons/bs';
 
-const Post = () => {
+
+const Post = (props) => {
+    console.log(props.post)
     return (
         <div className={style.topJobs}>
             <div className={style.firstSection}>
                 <div className={style.wrapper}>
                     <img className={style.imgIcon} src="https://gambolthemes.net/workwise-new/images/resources/user-pic.png" alt="" />
                     <div>
-                    <h3 className={style.name}>John Doe</h3>
+                    <h3 className={style.name}>{props.post.name}</h3>
                     <span className={style.statusTime}>
                         <img src="https://gambolthemes.net/workwise-new/images/clock.png" alt="" />
                         3 min ago
@@ -28,11 +31,11 @@ const Post = () => {
                 <div className={style.secondSection}>
                     <span className={style.statusTime}>
                         <img src="https://gambolthemes.net/workwise-new/images/icon8.png" alt="" />
-                        Epic Coder
+                        {props.post.rank}
                     </span>
                     <span className={style.statusTime}>
                         <img src="https://gambolthemes.net/workwise-new/images/icon9.png" alt="" />
-                        India
+                        {props.post.location}
                     </span>
                 </div>
                 <div className={style.wrapper}>
@@ -48,17 +51,17 @@ const Post = () => {
                     </i>
                 </div>
             </div>
-            <h4>Senior Wordpress Developer</h4>
+            <h4>{props.post.position}</h4>
             <div className={style.wrapper}>
                 <div className={style.timeJob}>
                     <a href="">Full Time</a>
                 </div>
                 <div className={style.cash}>
-                    <p>$30 / hr</p>
+                    <p>{props.post.salary}</p>
                 </div>
             </div>
             <div className={style.lorem}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...</p>
+                <p>{props.post.description}</p>
                 <a href="">view more</a>
             </div>
             <ul className={style.skills}>
@@ -104,6 +107,21 @@ const Post = () => {
             </div>
         </div>
     )
+}
+
+const postsType = PropTypes.arrayOf(
+    PropTypes.shape({
+        name: PropTypes.string,
+        rank: PropTypes.string,
+        location: PropTypes.string,
+        position: PropTypes.string,
+        description: PropTypes.string,
+        salary: PropTypes.string,
+    })
+)
+
+Post.PropTypes = {
+    post: postsType
 }
 
 export default Post;

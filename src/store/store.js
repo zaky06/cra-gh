@@ -76,12 +76,53 @@ const store = {
   ],
   jobs: [
     {
-      name: "Software Developer",
-      description: "lorem",
+      position: "Senoir Product Designer",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      salary: "$25/hr",
+      url: "google.com",
+    },
+    {
+      position: "Senior UI / UX Designer",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      salary: "$25/hr",
+      url: "google.com",
+    },
+    {
+      position: "Junoir Seo Designer",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      salary: "$25/hr",
+      url: "google.com",
+    },
+    {
+      position: "Senior PHP Designer",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      salary: "$25/hr",
+      url: "google.com",
+    },
+    {
+      position: "Senior Developer Designer",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       salary: "$25/hr",
       url: "google.com",
     },
   ],
+  posts: [
+    {
+      name: "John Doe",
+      rank: "Epic Coder",
+      location: "India",
+      position: "Senior Wordpress Developer",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...",
+      salary: "$30 / hr",
+    },
+    
+  ],
 };
 
 export default store;
+
+/*
+
+
+
+*/

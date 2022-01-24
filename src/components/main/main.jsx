@@ -4,11 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ActionPost from "../actionpost/actionpost";
 import ProfileInfo from "../profileinfo";
 import SignUp from "../signup";
-import Post from "../post";
-import TopJobs from "../topjobs";
+import Posts from "../posts";
+import Jobs from "../jobs";
 import style from "./main.module.css";
 import Copyright from "../copyright";
-import Viewed from "../viewed";
 import TopProfiles from "../topprofiles";
 import Post2 from "../post2";
 import PostComments from "../post-comments/post-comments";
@@ -34,7 +33,7 @@ const Main = (props) => {
                          <ActionPost />
                      </div>
                      <div className={style.block}>
-                         <Post />
+                         <Posts posts={props.posts} />
                      </div>
                      <div className={style.block}>
                          <TopProfiles users={props.users}/>
@@ -51,13 +50,13 @@ const Main = (props) => {
                         <SignUp />
                     </div>
                     <div className={style.block}>
-                        <TopJobs />
+                        <Jobs jobs={props.jobs} title={"Top Jobs"} />
                     </div>
                     <div className={style.block}>
-                        <Viewed />
+                        <Jobs jobs={props.jobs.slice(0, 3)} title={"Most Viewed This Week"} />
                     </div>
                     <div className={style.block}>
-                        <AddFriend users={props.users} title={"Most Viewed People"}/>
+                        <AddFriend users={props.users} title={"Most Viewed People"} />
                     </div>
                 </Col>
             </Row>
@@ -73,8 +72,30 @@ const usersType = PropTypes.arrayOf(
     })
   );
 
+const jobsType = PropTypes.arrayOf(
+    PropTypes.shape({
+      position: PropTypes.string,
+      description: PropTypes.string,
+      salary: PropTypes.string,
+      url: PropTypes.string,
+      })
+  );
+
+const postsType = PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      rank: PropTypes.string,
+      location: PropTypes.string,
+      position: PropTypes.string,
+      description: PropTypes.string,
+      salary: PropTypes.string,
+    })
+  );
+
 Main.propTypes = {
-    users: usersType
+    users: usersType,
+    jobs: jobsType,
+    posts: postsType,
 }
 
 export default Main;
