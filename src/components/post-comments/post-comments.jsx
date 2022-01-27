@@ -5,6 +5,7 @@ import { BsEnvelope } from 'react-icons/bs';
 import { BsSuitHeartFill } from 'react-icons/bs';
 import { BsChatLeftFill } from 'react-icons/bs';
 import { BsEyeFill } from 'react-icons/bs';
+import Comments from "../comments";
 
 
 const PostComments = () => {
@@ -103,6 +104,7 @@ const PostComments = () => {
                     </span>
                 </div>
             </div>
+            <Comments />
         </div>
     )
 }
