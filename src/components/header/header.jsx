@@ -7,8 +7,7 @@ import Miniprofile from "../miniprofile/miniprofile";
 import Profilelist from "../profilelist/profilelist";
 
 const Header = (props) => {
-  console.log(props.header);
-
+  
   return (
     <header className={style.header}>
       <div className={style.container}>

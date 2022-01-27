@@ -112,19 +112,89 @@ const store = {
       rank: "Epic Coder",
       location: "India",
       position: "Senior Wordpress Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...",
       salary: "$30 / hr",
-      src: "https://gambolthemes.net/workwise-new/images/resources/user-pic.png"
+      src: "https://gambolthemes.net/workwise-new/images/resources/user-pic.png",
+      likes: 15,
+      views: 421,
+      comments: [
+        {
+          id: 1,
+          author: "John Doe",
+          content:
+            "I often have to generate random UNIX timestamps so I created this simple online utility that does it for me. It lets you generate however many random POSIX times you need from a 64-bit time range. It works in the browser and is powered by alien technology from the future.",
+          date: 1070215205,
+        },
+        {
+          id: 2,
+          author: "Lilian Johnson",
+          content:
+            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+          date: 1396098802,
+          parent: 1,
+        },
+        {
+          id: 3,
+          author: "Alex Ram",
+          content:
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          date: 1402872287,
+        },
+        {
+          id: 4,
+          author: "Victoria Farrrel",
+          content:
+            "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+          date: 1070215205,
+        },
+      ],
     },
     {
       name: "Lili Boba",
       rank: "Vonuci Coder",
       location: "Arabic",
       position: "Senior Wordpress Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...",
       salary: "$110 / hr",
-      isAvaible: true,
-      src: "https://gambolthemes.net/workwise-new/images/resources/us-pc2.png"
+      isAvailable: true,
+      src: "https://gambolthemes.net/workwise-new/images/resources/us-pc2.png",
+      likes: 411,
+      views: 897,
+      comments: [
+        {
+          id: 1,
+          author: "John Doe",
+          content:
+            "I often have to generate random UNIX timestamps so I created this simple online utility that does it for me. It lets you generate however many random POSIX times you need from a 64-bit time range. It works in the browser and is powered by alien technology from the future.",
+          date: 1070215205,
+        },
+        {
+          id: 2,
+          author: "Lilian Johnson",
+          content:
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          date: 1396098802,
+          parent: 1,
+        },
+        {
+          id: 3,
+          author: "Alex Ram",
+          content:
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          date: 1402872287,
+          parent: 1,
+        },
+        {
+          id: 4,
+          author: "Victoria Farrrel",
+          content:
+            "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+          date: 1070215205,
+          parent: 3,
+        },
+      ],
     },
   ],
 };

@@ -9,7 +9,12 @@ const App = (props) => {
   return (
     <div className="app-wrapper">
       <Header header={props.store.header} />
-      <Main className="main" users={props.store.users} jobs={props.store.jobs} posts={props.store.posts} />
+      <Main
+        className="main"
+        users={props.store.users}
+        jobs={props.store.jobs}
+        posts={props.store.posts}
+      />
     </div>
   );
 };
@@ -47,7 +52,17 @@ export const postsType = PropTypes.arrayOf(
     position: PropTypes.string,
     description: PropTypes.string,
     salary: PropTypes.string,
-    isAvaible: PropTypes.bool,
+    isAvailable: PropTypes.bool,
+    src: PropTypes.string,
+    comments: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number,
+        author: PropTypes.string,
+        content: PropTypes.string,
+        date: PropTypes.number,
+        parent: PropTypes.number,
+      })
+    ),
   })
 );
 
@@ -56,7 +71,7 @@ App.propTypes = {
     header: { nav: navType, search: navType },
     users: usersType,
     jobs: jobsType,
-    posts : postsType,
+    posts: postsType,
   }),
 };
 

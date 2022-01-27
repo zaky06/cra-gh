@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./post.module.css";
 import PropTypes from "prop-types";
 import { BsFillBookmarkFill } from 'react-icons/bs';
@@ -6,10 +6,15 @@ import { BsEnvelope } from 'react-icons/bs';
 import { BsSuitHeartFill } from 'react-icons/bs';
 import { BsChatLeftFill } from 'react-icons/bs';
 import { BsEyeFill } from 'react-icons/bs';
+import Comments from "../comments";
 
 
 const Post = (props) => {
-    console.log(props.post)
+    
+    const [isCommentsOpened, setIsCommentsOpened] = useState(false);
+    function commentsToggle() {
+        setIsCommentsOpened(!isCommentsOpened);
+    }
     return (
         <div className={style.topJobs}>
             <div className={style.firstSection}>
@@ -49,7 +54,7 @@ const Post = (props) => {
                         <BsEnvelope />
                         </button>
                     </i>
-                    {props.post.isAvaible ? (
+                    {props.post.isAvailable ? (
                         <div className={style.bid}>
                          <a href="">Bid Now</a>
                         </div>
@@ -98,7 +103,7 @@ const Post = (props) => {
                     </span>
                     <img src="https://gambolthemes.net/workwise-new/images/liked-img.png" alt="" />
                     <span className={style.numberLike}>25</span>
-                    <span>
+                    <span onClick={commentsToggle}>
                         <button className={style.likeButton}>
                             <BsChatLeftFill />
                             <p>Comment 15</p>
@@ -112,25 +117,31 @@ const Post = (props) => {
                     </span>
                 </div>
             </div>
+            {isCommentsOpened && <Comments comments={props.post.comments}/>}
         </div>
     )
 }
 
-const postsType = PropTypes.arrayOf(
-    PropTypes.shape({
-        name: PropTypes.string,
-        rank: PropTypes.string,
-        location: PropTypes.string,
-        position: PropTypes.string,
-        description: PropTypes.string,
-        salary: PropTypes.string,
-        isAvaible: PropTypes.bool,
-        src: PropTypes.string,
-    })
-)
-
 Post.propTypes = {
-    post: postsType
+    post: PropTypes.shape({
+            name: PropTypes.string,
+            rank: PropTypes.string,
+            location: PropTypes.string,
+            position: PropTypes.string,
+            description: PropTypes.string,
+            salary: PropTypes.string,
+            isAvailable: PropTypes.bool,
+            src: PropTypes.string,
+            comments: PropTypes.arrayOf(
+                PropTypes.shape({
+                  id: PropTypes.number,
+                  author: PropTypes.string,
+                  content: PropTypes.string,
+                  date: PropTypes.number,
+                  parent: PropTypes.number,
+                })
+              ),
+        })
 }
 
 export default Post;

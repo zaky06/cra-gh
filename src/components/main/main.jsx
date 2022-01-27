@@ -9,7 +9,6 @@ import Jobs from "../jobs";
 import style from "./main.module.css";
 import Copyright from "../copyright";
 import TopProfiles from "../topprofiles";
-import PostComments from "../post-comments/post-comments";
 import AddFriend from "../add-friend";
 
 const Main = (props) => {
@@ -39,9 +38,6 @@ const Main = (props) => {
                      </div>
                      <div className={style.block}>
                          <Posts posts={props.posts.slice(1, 3)}/>
-                     </div>
-                     <div className={style.block}>
-                         <PostComments />
                      </div>
                 </Col>
                 <Col xs={12} md={3}>
@@ -88,8 +84,17 @@ const postsType = PropTypes.arrayOf(
       position: PropTypes.string,
       description: PropTypes.string,
       salary: PropTypes.string,
-      isAvaible: PropTypes.bool,
+      isAvailable: PropTypes.bool,
       src: PropTypes.string,
+      comments: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number,
+          author: PropTypes.string,
+          content: PropTypes.string,
+          date: PropTypes.number,
+          parent: PropTypes.number,
+        })
+      ),
     })
   );
 

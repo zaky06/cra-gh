@@ -7,10 +7,10 @@ const { form, search, button, img, orangeButton } = styles;
 
 export default function Search(props) {
   const { iconSrc, placeholder, className } = props;
-  const { register, handleSubmit, watch } = useForm();
+  const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
 
-  console.log(watch("example")); // watch input value by passing the name of it
+
 
 
   return (

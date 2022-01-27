@@ -20,21 +20,28 @@ const Posts = (props) => {
     )
 }
 
-const postsType = PropTypes.arrayOf(
-  PropTypes.shape({
-    name: PropTypes.string,
-    rank: PropTypes.string,
-    location: PropTypes.string,
-    position: PropTypes.string,
-    description: PropTypes.string,
-    salary: PropTypes.string,
-    isAvaible: PropTypes.bool,
-    src: PropTypes.string,
-  })
-);
-
 Posts.propTypes = {
-  posts: postsType
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      rank: PropTypes.string,
+      location: PropTypes.string,
+      position: PropTypes.string,
+      description: PropTypes.string,
+      salary: PropTypes.string,
+      isAvaible: PropTypes.bool,
+      src: PropTypes.string,
+      comments: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number,
+          author: PropTypes.string,
+          content: PropTypes.string,
+          date: PropTypes.number,
+          parent: PropTypes.number,
+        })
+      ),
+    })
+  )
 }
 
 export default Posts;

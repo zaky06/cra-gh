@@ -4,7 +4,6 @@ import { BsEnvelope } from 'react-icons/bs';
 import PropTypes from "prop-types";
 
 const TopProfile = (props) => {
-    console.log(props.user)
     return (
         <div className={style.placeholder}>
             <div className={style.profileImg}>
