@@ -11,10 +11,13 @@ import Comments from "../comments";
 
 const Post = (props) => {
 
+    const numberComments = props.post.comments.length;
     const [isCommentsOpened, setIsCommentsOpened] = useState(false);
     function commentsToggle() {
         setIsCommentsOpened(!isCommentsOpened);
     }
+
+
     return (
         <div className={style.topJobs}>
             <div className={style.firstSection}>
@@ -106,7 +109,7 @@ const Post = (props) => {
                     <span onClick={commentsToggle}>
                         <button className={style.likeButton}>
                             <BsChatLeftFill />
-                            <p>Comment 15</p>
+                            <p>Comments {numberComments}</p>
                         </button>
                     </span>
                 </div>
