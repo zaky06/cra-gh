@@ -16,6 +16,13 @@ const Post = (props) => {
     function commentsToggle() {
         setIsCommentsOpened(!isCommentsOpened);
     }
+    const { statusBar, statusBarBorder} = style;
+
+    // const [isComOpened, setIsComOpened] = useState();
+    // function comToggle() {
+    //     setIsComOpened(isComOpened);
+    // }
+    
 
 
     return (
@@ -96,7 +103,7 @@ const Post = (props) => {
                     <a href="">Wordpress</a>
                 </li>
             </ul>
-            <div className={style.statusBar}>
+            <div className={isCommentsOpened ? (statusBar + " " + statusBarBorder) : (statusBar)} >
                 <div className={style.wrapper3}>
                     <span>
                         <button className={style.likeButton}>
