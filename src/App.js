@@ -54,6 +54,8 @@ export const postsType = PropTypes.arrayOf(
     salary: PropTypes.string,
     isAvailable: PropTypes.bool,
     src: PropTypes.string,
+    likes: PropTypes.number,
+    views: PropTypes.number,
     comments: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.number,

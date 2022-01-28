@@ -10,7 +10,7 @@ import Comments from "../comments";
 
 
 const Post = (props) => {
-    
+
     const [isCommentsOpened, setIsCommentsOpened] = useState(false);
     function commentsToggle() {
         setIsCommentsOpened(!isCommentsOpened);
@@ -102,7 +102,7 @@ const Post = (props) => {
                         </button>
                     </span>
                     <img src="https://gambolthemes.net/workwise-new/images/liked-img.png" alt="" />
-                    <span className={style.numberLike}>25</span>
+                    <span className={style.numberLike}>{props.post.likes}</span>
                     <span onClick={commentsToggle}>
                         <button className={style.likeButton}>
                             <BsChatLeftFill />
@@ -113,7 +113,7 @@ const Post = (props) => {
                 <div className={style.wrapper3}>
                     <span className={style.likeButton}>
                         <BsEyeFill />
-                        <p>Views 50</p>
+                        <p>Views {props.post.views}</p>
                     </span>
                 </div>
             </div>
@@ -132,6 +132,8 @@ Post.propTypes = {
             salary: PropTypes.string,
             isAvailable: PropTypes.bool,
             src: PropTypes.string,
+            likes: PropTypes.number,
+            views: PropTypes.number,
             comments: PropTypes.arrayOf(
                 PropTypes.shape({
                   id: PropTypes.number,
