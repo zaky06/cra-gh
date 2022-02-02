@@ -184,7 +184,6 @@ const store = {
           content:
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
           date: 1402872287,
-          parent: 1,
         },
         {
           id: 4,
@@ -192,6 +191,22 @@ const store = {
           content:
             "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
           date: 1070215205,
+          parent: 3,
+        },
+        {
+          id: 5,
+          author: "Olga Johnson",
+          content:
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          date: 1396098802,
+          parent: 1,
+        },
+        {
+          id: 6,
+          author: "Anna Ben",
+          content:
+            "Nededemo voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          date: 1396098802,
           parent: 3,
         },
       ],

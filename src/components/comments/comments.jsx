@@ -2,22 +2,27 @@ import React from "react";
 import style from "./comments.module.css";
 import Comment from "../comment/comment";
 import PropTypes from "prop-types";
+import { sortComments } from './sortComments';
 
 const Comments = (props) => {
+  sortComments(props.comments);
 
-    return (
-        <div className={style.comments}>
-            {
-                props.comments.map((comment) => {
-                  return (
-                    <div key={comment.id}>
-                        <Comment comment={comment} />
-                    </div>
-                  )
-                })
-            }
-        </div>
-    )
+  // https://learn.javascript.ru/destructuring-assignment#destrukturizatsiya-obekta
+  const { childComment } = style;
+
+  return (
+      <div className={style.comments}>
+          {
+              sortComments(props.comments).map((comment) => {
+                return (
+                  <div key={comment.id} className={comment.parent ? childComment : null} >
+                      <Comment comment={comment} />
+                  </div>
+                )
+              })
+          }
+      </div>
+  )
 }
 
 Comments.propTypes = {

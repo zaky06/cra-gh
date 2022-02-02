@@ -17,13 +17,7 @@ const Post = (props) => {
         setIsCommentsOpened(!isCommentsOpened);
     }
     const { statusBar, statusBarBorder} = style;
-
-    // const [isComOpened, setIsComOpened] = useState();
-    // function comToggle() {
-    //     setIsComOpened(isComOpened);
-    // }
     
-
 
     return (
         <div className={style.topJobs}>
