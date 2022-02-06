@@ -120,13 +120,6 @@ const store = {
       views: 421,
       comments: [
         {
-          id: 1,
-          author: "John Doe",
-          content:
-            "I often have to generate random UNIX timestamps so I created this simple online utility that does it for me. It lets you generate however many random POSIX times you need from a 64-bit time range. It works in the browser and is powered by alien technology from the future.",
-          date: 1070215205,
-        },
-        {
           id: 2,
           author: "Lilian Johnson",
           content:
@@ -135,14 +128,21 @@ const store = {
           parent: 1,
         },
         {
-          id: 3,
+          id: 1,
+          author: "John Doe",
+          content:
+            "I often have to generate random UNIX timestamps so I created this simple online utility that does it for me. It lets you generate however many random POSIX times you need from a 64-bit time range. It works in the browser and is powered by alien technology from the future.",
+          date: 1070215205,
+        },
+        {
+          id: 4,
           author: "Alex Ram",
           content:
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
           date: 1402872287,
         },
         {
-          id: 4,
+          id: 3,
           author: "Victoria Farrrel",
           content:
             "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
@@ -179,6 +179,14 @@ const store = {
           parent: 1,
         },
         {
+          id: 6,
+          author: "Anna Ben",
+          content:
+            "Nededemo voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          date: 1396098802,
+          parent: 3,
+        },
+        {
           id: 3,
           author: "Alex Ram",
           content:
@@ -200,14 +208,6 @@ const store = {
             "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
           date: 1396098802,
           parent: 1,
-        },
-        {
-          id: 6,
-          author: "Anna Ben",
-          content:
-            "Nededemo voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-          date: 1396098802,
-          parent: 3,
         },
       ],
     },

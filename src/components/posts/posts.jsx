@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Post from "../post/post";
 import style from "./posts.module.css"
 
-
+  
 const Posts = (props) => {
     return (
         <div className={style.posts}>

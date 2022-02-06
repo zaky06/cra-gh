@@ -1,18 +1,23 @@
-export const sortComments = (comments = []) => {
-    let sortCom = [];
+export const sortComments = (array = []) => {
+  const commentsParent = [];
+  const comments = [];
 
-    for ( let i = 0; i < comments.length; i++) {
-        for (let j = i + 1; j < comments.length; j++) {
-            if(comments[i].id === j) {
-                sortCom.push(comments[i]) 
-            } else if (comments[j].parent === i) {
-                sortCom.push(comments[j])
-            } 
-        }
+  const sortedArray = array.sort((a, b) => a.id - b.id);
 
+  sortedArray.forEach((comment) => {
+    if (comment.parent) {
+      commentsParent.push(comment);
+    } else {
+      comments.push(comment);
     }
-    sortCom.pop()
-    // console.log(sortCom);
-    
-  return sortCom;
+  });
+  commentsParent.reverse().forEach((commentParent) => {
+    comments.forEach((comment, j) => {
+      if (comment.id === commentParent.parent) {
+        comments.splice(j + 1, 0, commentParent);
+      }
+    });
+  });
+
+  return comments;
 };
