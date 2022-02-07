@@ -1,5 +1,5 @@
 .comment {
-    padding: 10px;
+    padding: 20px;
 }
 
 
@@ -31,11 +31,16 @@
 .commentButton {
     border: none;
     background-color: white;
-    color: var(--main-color);
+    color: #b2b2b2;
     display: flex;
     padding: 0;
     font-size: 14px;
     font-weight: 600;
+}
+
+.commentButton:hover {
+    color: var(--main-color);
+    transition: 0.4s;
 }
 
 .textButton {
