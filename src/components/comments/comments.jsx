@@ -3,6 +3,7 @@ import style from "./comments.module.css";
 import Comment from "../comment/comment";
 import PropTypes from "prop-types";
 import { sortComments } from "./sortComments";
+import AddComment from "../add-comment/add-comment";
 
 const Comments = (props) => {
   // https://learn.javascript.ru/destructuring-assignment#destrukturizatsiya-obekta
@@ -20,6 +21,7 @@ const Comments = (props) => {
           </div>
         );
       })}
+      <AddComment />
     </div>
   );
 };
