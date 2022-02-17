@@ -1,5 +1,5 @@
 .comment {
-    padding: 20px;
+    padding: 30px;
 }
 
 
@@ -8,12 +8,10 @@
     font-size: 16px;
     font-weight: 600;
     padding: 0;
-    margin: 0;
+    margin-bottom: 3px;
 }
 
 .time {
-    margin: 0;
-    padding: 0;
     color: #b2b2b2;
     font-size: 14px;
 }

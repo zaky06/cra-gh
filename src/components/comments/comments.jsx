@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./comments.module.css";
 import Comment from "../comment/comment";
 import PropTypes from "prop-types";
@@ -8,10 +8,21 @@ import AddComment from "../add-comment/add-comment";
 const Comments = (props) => {
   // https://learn.javascript.ru/destructuring-assignment#destrukturizatsiya-obekta
   const { childComment } = style;
+  const [comments, setComments] = useState(props.comments);
+
+  const postComment = (commentText) => {
+    const comment = {
+      id: comments.length + 1,
+      author: "Lilian Johnson",
+      content: commentText,
+      date: 1396098802,
+    };
+    setComments([...comments, comment]);
+  };
 
   return (
     <div className={style.comments}>
-      {sortComments(props.comments).map((comment) => {
+      {sortComments(comments).map((comment) => {
         return (
           <div
             key={comment.id}
@@ -21,7 +32,7 @@ const Comments = (props) => {
           </div>
         );
       })}
-      <AddComment />
+      <AddComment postComment={postComment} />
     </div>
   );
 };
