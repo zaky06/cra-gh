@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог авто- и мототехники</title>
+    <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/entrance-test/lesson-1/task-6/fonts.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+
+
+class Transport {
+  constructor(type, price, vendor, model) {
+    this.type = type;
+    this.price = price;
+    this.vendor = vendor;
+    this.model = model;
+  }
+
+  getInfo() {
+    return `${this.vendor}, ${this.model}`;
+  }
+
+  getPrice() {
+    debugger;
+    return this.price.toLocaleString("ru-RU") + " ₽";
+  }
+}
+
+class Car extends Transport {
+  constructor(vendor, model, doorsCount, price) {
+    super("car", price, vendor, model);
+    this.doorsCount = doorsCount;
+  }
+
+  getInfo() {
+    super.getInfo.apply(this, this.vendor, this.model);
+  }
+
+  getDoorsCount() {
+    return `Кол-во дверей: ${this.doorsCount}`;
+  }
+}
+
+class Bike extends Transport {
+  constructor(vendor, model, maxSpeed, price) {
+    super("bike", price, vendor, model);
+    this.maxSpeed = maxSpeed;
+  }
+
+  getMaxSpeed() {
+    return `Макс. скорость: ${this.maxSpeed} км/ч`;
+  }
+
+  getInfo() {
+    super.getInfo.apply(this, this.vendor, this.model);
+  }
+}
+
+const data = [
+  {
+    vendor: "VW",
+    model: "Passat",
+    doorsCount: "4",
+    price: "200000",
+    type: "car",
+  },
+  { vendor: "BMX", model: "233", maxSpeed: "6", price: "5000", type: "bike" },
+];
+
+for (const item of data) {
+  // const entityContainer = document.createElement("article");
+  // entityContainer.classList.add("card", "catalog__item");
+  if (item.type === "car") {
+    const { getDoorsCount, getInfo, getPrice } = new Car(
+      item.vendor,
+      item.model,
+      item.doorsCount,
+      item.price
+    );
+
+    console.log(getInfo(), getDoorsCount(), getPrice());
+    // entityContainer.innerHTML = tpl(
+    //   item.img,
+    //   getInfo(),
+    //   getDoorsCount(),
+    //   getPrice()
+    // );
+  } else {
+    const { getMaxSpeed, getInfo, getPrice } = new Bike(
+      item.vendor,
+      item.model,
+      item.maxSpeed,
+      item.price
+    );
+
+    console.log(getInfo(), getMaxSpeed(), getPrice());
+    // entityContainer.innerHTML = tpl(
+    //   item.img,
+    //   getInfo(),
+    //   getMaxSpeed(),
+    //   getPrice()
+    // );
+  }
+  // catalog.appendChild(entityContainer);
+}
+
+/*
+    Вы устроились разработчиком в автомобильную компанию. Первое задание — починить код,
+    который отвечает за отображение информации о транспорте и цене. Поправьте классы так,
+    чтобы ошибка TypeError: Cannot read property 'vendor' of undefined больше не отображалась.
+     Вносите изменения только в файл task.js.
+  */
+
+
+    </script>
+  </head>
+  <body class="page">
+
+  </body>
+</html>

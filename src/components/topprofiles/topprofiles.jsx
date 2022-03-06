@@ -12,16 +12,16 @@ const TopProfiles = (props) => {
 
     const responsive = {
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
+          breakpoint: { max: 3000, min: 1199 },
           items: 3
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 3
+          breakpoint: { max: 1199, min: 464 },
+          items: 2
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
-          items: 3
+          items: 1
         }
       };
 
