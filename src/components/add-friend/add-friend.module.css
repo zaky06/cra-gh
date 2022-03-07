@@ -70,6 +70,13 @@
     margin: 0;
 }
 
+@media screen and (max-width: 1200px) {
+    .nameAndJob h4 {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
+
 .nameAndJob p {
     color: #686868;
     font-size: 14px;
@@ -78,9 +85,19 @@
     margin: 0;
 }
 
-.buttonPlus {
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 1200px) {
+    .nameAndJob p {
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: auto;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .buttonPosition {
+        
+    }
 }
 
 .button {

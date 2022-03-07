@@ -12,10 +12,11 @@ import TopProfiles from "../topprofiles";
 import AddFriend from "../add-friend";
 
 const Main = (props) => {
+    
     return (
         <Container>
             <Row className={style.row}>
-                <Col xs={12} md={3}>
+                <Col xs={12} lg={3} md={5}>
                     <div className={style.block}>
                         <ProfileInfo />
                     </div>
@@ -26,7 +27,7 @@ const Main = (props) => {
                         <Copyright />
                     </div>
                 </Col>
-                <Col xs={12} md={6}>
+                <Col xs={12} lg={6} md={7}>
                      <div className={style.block}>
                          <ActionPost />
                      </div>
@@ -40,7 +41,7 @@ const Main = (props) => {
                          <Posts posts={props.posts.slice(1, 3)}/>
                      </div>
                 </Col>
-                <Col xs={12} md={3}>
+                <Col xs={12} lg={3} md={0}>
                     <div className={style.block}>
                         <SignUp />
                     </div>

@@ -18,7 +18,7 @@ const AddFriend = (props) => {
                         <p>{user.description}</p>
                     </div>
                 </div>
-                <div>
+                <div className={style.buttonPosition}>
                     <Button size="sm" className={style.button} variant="outline-danger"><AiOutlinePlus/></Button>
                 </div>
             </div>

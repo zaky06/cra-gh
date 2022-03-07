@@ -56,3 +56,9 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+/* @media screen and (max-width: 1200px){
+    .info {
+        font-size: 12px;
+    }
+} */
