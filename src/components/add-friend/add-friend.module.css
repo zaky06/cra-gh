@@ -88,17 +88,9 @@
 @media screen and (max-width: 1200px) {
     .nameAndJob p {
         font-size: 12px;
-        white-space: nowrap;
-        overflow: auto;
     }
 }
 
-
-@media screen and (max-width: 1200px) {
-    .buttonPosition {
-        
-    }
-}
 
 .button {
     margin: 15px;

@@ -16,7 +16,7 @@ const Main = (props) => {
     return (
         <Container>
             <Row className={style.row}>
-                <Col xs={12} lg={3} md={5}>
+                <Col xs={12} lg={3} md={4}>
                     <div className={style.block}>
                         <ProfileInfo />
                     </div>
@@ -27,7 +27,7 @@ const Main = (props) => {
                         <Copyright />
                     </div>
                 </Col>
-                <Col xs={12} lg={6} md={7}>
+                <Col xs={12} lg={6} md={8}>
                      <div className={style.block}>
                          <ActionPost />
                      </div>
