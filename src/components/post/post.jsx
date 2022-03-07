@@ -104,7 +104,7 @@ const Post = (props) => {
         <li>
           <a href="">JavaScript</a>
         </li>
-        <li>
+        <li className={style.lastElement}>
           <a href="">Wordpress</a>
         </li>
       </ul>

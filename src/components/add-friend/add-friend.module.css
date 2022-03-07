@@ -85,12 +85,6 @@
     margin: 0;
 }
 
-@media screen and (max-width: 1200px) {
-    .nameAndJob p {
-        font-size: 12px;
-    }
-}
-
 
 .button {
     margin: 15px;

@@ -31,6 +31,13 @@
     align-items: center;
 }
 
+@media screen and (max-width: 416px){
+    .wrapper2 {
+        flex-wrap: wrap;
+        padding-left: 5px;
+    }
+}
+
 
 
 .firstSection {
@@ -144,13 +151,15 @@
     display: flex;
     flex-direction: row;
     padding: 15px;
-
+    flex-wrap: wrap;
 }
+
 
 .topJobs ul li {
     list-style: none;
-    padding-top: 5px;
+    margin-top: 5px;
 }
+
 
 .skills li {
     margin-right: 6px;
@@ -164,6 +173,12 @@
     border-radius: 30px;
     padding: 7px 15px;
     font-weight: 500;
+}
+
+@media screen and (min-width: 200px) and (max-width: 465px){
+    .lastElement {
+        padding-top: 10px;
+    }
 }
 
 .statusBar  {
