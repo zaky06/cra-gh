@@ -25,7 +25,7 @@ const Header = (props) => {
         <div className={style.right}>
           <Nav nav={props.header.nav} />
           <Miniprofile />
-          <Profilelist />
+          <Profilelist nav={props.header.nav} />
         </div>
       </div>
     </header>

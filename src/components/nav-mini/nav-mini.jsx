@@ -1,20 +1,29 @@
 import React from "react";
 import style from "./nav-mini.module.css"
-const NavMini = () => {
+import PropTypes from 'prop-types';
+
+const NavMini = (props) => {
     return(
-        <div className={style.navMini}>
-            <ul>
+            <ul className={style.ulHelper}>
                 <li>
-                    <a href="">
-                        <span>
-                            <img src="https://gambolthemes.net/workwise-new/images/icon1.png" alt="" />
+                    <a href="" className={style.aList}>
+                        <span className={style.icon}>
+                            <img src={props.nav.img} alt="" />
                         </span>
-                        Home
+                        <p className={style.pHelper}>{props.nav.name}</p>
                     </a>
                 </li>
             </ul>
-        </div>
     )
 }
+
+NavMini.propTypes = {
+    nav: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            name: PropTypes.string,
+            img: PropTypes.string,
+        }))
+  };
 
 export default NavMini;

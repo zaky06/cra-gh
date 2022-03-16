@@ -1,9 +1,10 @@
 import React from "react";
 import style from './profilelist.module.css';
-import NavMini from "../nav-mini/nav-mini";
 import { useState } from "react";
+import PropTypes from 'prop-types';
+import NavMiniTool from "../nav-mini-tool";
 
-const Profilelist = () => {
+const Profilelist = (props) => {
     const [isNavOpened, setIsNavOpened] = useState(false);
 
     function menuToggle() {
@@ -16,10 +17,21 @@ const Profilelist = () => {
                 <rect y="30" width="100" height="15"></rect>
                 <rect y="60" width="100" height="15"></rect>
             </svg>
-            {isNavOpened && <NavMini />}
+            {isNavOpened && <NavMiniTool nav={props.nav} />}
         </div>
     )
 }
+
+Profilelist.propTypes = {
+      nav: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number,
+          name: PropTypes.string,
+          img: PropTypes.string,
+        })
+      ),
+  };
+
 
 export default Profilelist; 
 

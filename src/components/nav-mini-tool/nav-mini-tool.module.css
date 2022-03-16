@@ -1,0 +1,9 @@
+.navMiniTool {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    background-color: var(--main-color);
+    padding: 25px 20px;
+    height: 100%;
+}
