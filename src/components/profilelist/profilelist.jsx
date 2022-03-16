@@ -1,14 +1,22 @@
 import React from "react";
 import style from './profilelist.module.css';
+import NavMini from "../nav-mini/nav-mini";
+import { useState } from "react";
 
 const Profilelist = () => {
+    const [isNavOpened, setIsNavOpened] = useState(false);
+
+    function menuToggle() {
+        setIsNavOpened(!isNavOpened);
+    }
     return (
-        <div className={style.list}>
+        <div className={style.list} onClick={menuToggle}>
             <svg viewBox="0 0 100 80" width="25" height="25">
                 <rect width="100" height="15"></rect>
                 <rect y="30" width="100" height="15"></rect>
                 <rect y="60" width="100" height="15"></rect>
             </svg>
+            {isNavOpened && <NavMini />}
         </div>
     )
 }
