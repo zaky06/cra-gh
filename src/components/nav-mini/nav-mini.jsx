@@ -20,7 +20,6 @@ const NavMini = (props) => {
 NavMini.propTypes = {
     nav: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.number,
             name: PropTypes.string,
             img: PropTypes.string,
         }))
