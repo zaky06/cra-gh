@@ -1,7 +1,6 @@
 .list {
     display: none;
     fill: white;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 20px;
@@ -10,6 +9,6 @@
 
 @media screen and (max-width: 1200px){
     .list {
-     display: flex;   
+     display: flex; 
     }
 }
