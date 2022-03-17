@@ -35,4 +35,3 @@ Profilelist.propTypes = {
 
 export default Profilelist; 
 
-// <img className={style.img} src="https://icons-for-free.com/iconfiles/png/512/list+24px-131985192702419913.png" alt="" />

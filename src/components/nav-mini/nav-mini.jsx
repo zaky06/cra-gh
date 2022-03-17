@@ -18,11 +18,11 @@ const NavMini = (props) => {
 }
 
 NavMini.propTypes = {
-    nav: PropTypes.arrayOf(
+    nav: 
         PropTypes.shape({
             name: PropTypes.string,
             img: PropTypes.string,
-        }))
+        })
   };
 
 export default NavMini;
