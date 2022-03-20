@@ -16,6 +16,10 @@ ul li {
     margin-bottom: 15px;
 }
 
+.aList:hover {
+    color: white;
+}
+
 .icon {
     margin-right: 10px;
 
