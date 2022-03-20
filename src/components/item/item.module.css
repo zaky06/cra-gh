@@ -15,6 +15,10 @@
     flex-wrap: nowrap;
 }
 
+.link:hover {
+    color: inherit;
+}
+
 .image {
     width: auto;
     height: 13px;

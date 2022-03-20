@@ -26,6 +26,10 @@
     margin-right: 10px;
 }
 
+.name:hover {
+    color: white;
+}
+
 .iconSvg {
     fill: white;
     height: 10px;
