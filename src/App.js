@@ -6,13 +6,13 @@ import Main from "./components/main/main";
 import "./App.css";
 
 const App = (props) => {
+  const fetchUsers = async () => {
+    const response = await fetch("http://localhost:8080/users");
+    const data = await response.json();
+    return data;
+  };
 
-  const fetchData = async () => {
-    const response = await fetch('http://localhost:8080/express_backend');
-    console.log(response)
-  }
-
-  fetchData();
+  fetchUsers().then((data) => console.log(data));
 
   return (
     <div className="app-wrapper">
