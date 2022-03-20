@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.css": "/cra-gh/static/css/main.4503d91c.chunk.css",
-    "main.js": "/cra-gh/static/js/main.f46daf84.chunk.js",
-    "main.js.map": "/cra-gh/static/js/main.f46daf84.chunk.js.map",
-    "runtime-main.js": "/cra-gh/static/js/runtime-main.316e3ed9.js",
-    "runtime-main.js.map": "/cra-gh/static/js/runtime-main.316e3ed9.js.map",
-    "static/js/2.e63b9b44.chunk.js": "/cra-gh/static/js/2.e63b9b44.chunk.js",
-    "static/js/2.e63b9b44.chunk.js.map": "/cra-gh/static/js/2.e63b9b44.chunk.js.map",
-    "static/js/3.05b3ff38.chunk.js": "/cra-gh/static/js/3.05b3ff38.chunk.js",
-    "static/js/3.05b3ff38.chunk.js.map": "/cra-gh/static/js/3.05b3ff38.chunk.js.map",
+    "main.css": "/cra-gh/static/css/main.8d27b4c1.css",
+    "main.js": "/cra-gh/static/js/main.bfc21322.js",
+    "static/js/787.2eca79a8.chunk.js": "/cra-gh/static/js/787.2eca79a8.chunk.js",
+    "static/media/revicons.eot": "/cra-gh/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/cra-gh/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/cra-gh/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/cra-gh/index.html",
-    "static/css/main.4503d91c.chunk.css.map": "/cra-gh/static/css/main.4503d91c.chunk.css.map",
-    "static/js/2.e63b9b44.chunk.js.LICENSE.txt": "/cra-gh/static/js/2.e63b9b44.chunk.js.LICENSE.txt"
+    "main.8d27b4c1.css.map": "/cra-gh/static/css/main.8d27b4c1.css.map",
+    "main.bfc21322.js.map": "/cra-gh/static/js/main.bfc21322.js.map",
+    "787.2eca79a8.chunk.js.map": "/cra-gh/static/js/787.2eca79a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.316e3ed9.js",
-    "static/js/2.e63b9b44.chunk.js",
-    "static/css/main.4503d91c.chunk.css",
-    "static/js/main.f46daf84.chunk.js"
+    "static/css/main.8d27b4c1.css",
+    "static/js/main.bfc21322.js"
   ]
 }
