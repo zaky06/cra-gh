@@ -2,7 +2,7 @@
   "name": "cra-gh",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gitname.github.io/cra-gh",
+  "homepage": "https://zaky06.github.io/cra-gh",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -47,7 +47,7 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.24.0",
-    "gh-pages": "^3.2.0",
+    "gh-pages": "^3.2.3",
     "husky": "7.0.1",
     "lint-staged": "11.0.1",
     "prettier": "2.3.2"
