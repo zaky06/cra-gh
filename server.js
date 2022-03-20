@@ -1,15 +1,12 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const path = require("path");
-const app = express();
-app.use(express.static(path.join(__dirname, "build")));
+const express = require('express'); //Line 1
+const app = express(); //Line 2
+const port = process.env.PORT || 8080; //Line 3
+const cors = require('cors')
 
-app.get("/ping", function (req, res) {
-  return res.send("pong");
-});
+// This displays message that the server running and listening to specified port
+app.listen(port, () => console.log(`Listening on port ${port}`)); //Line 6
 
-app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
-});
-
-app.listen(process.env.PORT || 8080);
+// create a GET route
+app.get('/express_backend', cors(), (req, res) => { //Line 9
+  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' }); //Line 10
+}); //Line 11

@@ -6,6 +6,14 @@ import Main from "./components/main/main";
 import "./App.css";
 
 const App = (props) => {
+
+  const fetchData = async () => {
+    const response = await fetch('http://localhost:8080/express_backend');
+    console.log(response)
+  }
+
+  fetchData();
+
   return (
     <div className="app-wrapper">
       <Header header={props.store.header} />
