@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import style from "./header.module.css";
 import Nav from "../nav/nav";
-import PropTypes from "prop-types";
 import Search from "../search/search";
 import Miniprofile from "../miniprofile/miniprofile";
 import Profilelist from "../profilelist/profilelist";
 
 const Header = (props) => {
-  
   const [navItems, setNavItems] = useState([]);
   
   const fetchNav = async () => {
