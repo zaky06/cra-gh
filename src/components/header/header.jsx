@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import style from "./header.module.css";
 import Nav from "../nav/nav";
 import PropTypes from "prop-types";
@@ -8,6 +8,20 @@ import Profilelist from "../profilelist/profilelist";
 
 const Header = (props) => {
   
+  const [navItems, setNavItems] = useState([]);
+  
+  const fetchNav = async () => {
+    const response = await fetch("http://localhost:8080/nav");
+    const data = await response.json();
+    return data;
+  };
+
+  useEffect(() => {
+    fetchNav().then((nav) => {
+      setNavItems(nav)
+    });
+  }, []);
+
   return (
     <header className={style.header}>
       <div className={style.container}>
@@ -23,9 +37,9 @@ const Header = (props) => {
           />
         </div>
         <div className={style.right}>
-          <Nav nav={props.header.nav} />
+          <Nav nav={navItems} />
           <Miniprofile />
-          <Profilelist nav={props.header.nav} />
+          <Profilelist nav={navItems} />
         </div>
       </div>
     </header>

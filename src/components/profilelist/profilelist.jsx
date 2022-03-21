@@ -2,7 +2,7 @@ import React from "react";
 import style from './profilelist.module.css';
 import { useState } from "react";
 import PropTypes from 'prop-types';
-import NavMiniTool from "../nav-mini-tool";
+import NavMobile from "../nav-mobile";
 
 const Profilelist = (props) => {
     const [isNavOpened, setIsNavOpened] = useState(false);
@@ -17,7 +17,7 @@ const Profilelist = (props) => {
                 <rect y="30" width="100" height="15"></rect>
                 <rect y="60" width="100" height="15"></rect>
             </svg>
-            {isNavOpened && <NavMiniTool nav={props.nav} />}
+            {isNavOpened && <NavMobile nav={props.nav} />}
         </div>
     )
 }

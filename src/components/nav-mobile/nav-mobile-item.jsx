@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./nav-mini.module.css"
+import style from "./nav-mobile-item.module.css"
 import PropTypes from 'prop-types';
 
 const NavMini = (props) => {

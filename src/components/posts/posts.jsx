@@ -5,6 +5,8 @@ import style from "./posts.module.css"
 
   
 const Posts = (props) => {
+
+  
     return (
         <div className={style.posts}>
             {

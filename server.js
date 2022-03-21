@@ -14,7 +14,11 @@ app.get("/posts", cors(), (req, res) => {
 });
 
 app.get("/nav", cors(), (req, res) => {
-  res.send(store.nav);
+  res.send(store.header.nav);
+});
+
+app.get("/search", cors(), (req, res) => {
+  res.send(store.header.search);
 });
 
 app.get("/jobs", cors(), (req, res) => {
