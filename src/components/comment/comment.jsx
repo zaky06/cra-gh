@@ -33,13 +33,12 @@ const Comment = (props) => {
 
 Comment.propTypes = {
     comment: PropTypes.shape({
-          id: PropTypes.number,
-          author: PropTypes.string,
-          content: PropTypes.string,
-          date: PropTypes.number,
-          parent: PropTypes.number,
-        })
+        id: PropTypes.number,
+        author: PropTypes.string,
+        content: PropTypes.string,
+        date: PropTypes.number,
+        parent: PropTypes.number,
+    })
 }
-
 
 export default Comment;

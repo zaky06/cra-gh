@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 const Item = (props) => {
 
     return (
-            <li className={style.item}>
-                <a className={style.link} href="">
-                    <img className={style.image} src={props.img}/>
-                    <span className={style.title}>
-                        {props.name}
-                    </span>
-                </a>
-            </li>
+        <li className={style.item}>
+            <a className={style.link} href="">
+                <img className={style.image} src={props.img}/>
+                <span className={style.title}>
+                  {props.name}
+                </span>
+            </a>
+        </li>
     );
 }
 

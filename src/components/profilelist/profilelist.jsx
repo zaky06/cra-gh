@@ -32,6 +32,5 @@ Profilelist.propTypes = {
       ),
   };
 
-
 export default Profilelist; 
 

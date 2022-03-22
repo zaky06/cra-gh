@@ -41,7 +41,6 @@ const Main = (props) => {
       });
   }, []);
 
-    
     return (
         <Container>
             <Row className={style.row}>
@@ -96,9 +95,6 @@ const usersType = PropTypes.arrayOf(
       description: PropTypes.string,
     })
   );
-
-
-
 
 Main.propTypes = {
     users: usersType, 

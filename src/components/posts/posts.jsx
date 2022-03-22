@@ -5,21 +5,19 @@ import style from "./posts.module.css"
 
   
 const Posts = (props) => {
-
-  
-    return (
-        <div className={style.posts}>
-            {
-              props.posts.map((post, index) => {
-                return (
-                  <div key={index}>
-                    <Post post={post} />
-                  </div>
-                )
-              }) 
-            }
-        </div>
-    )
+  return (
+      <div className={style.posts}>
+          {
+            props.posts.map((post, index) => {
+              return (
+                <div key={index}>
+                  <Post post={post} />
+                </div>
+              )
+            }) 
+          }
+      </div>
+  )
 }
 
 Posts.propTypes = {

@@ -6,7 +6,7 @@ import { sortComments } from "./sortComments";
 import AddComment from "../add-comment/add-comment";
 
 const Comments = (props) => {
-  // https://learn.javascript.ru/destructuring-assignment#destrukturizatsiya-obekta
+
   const { childComment } = style;
   const [comments, setComments] = useState(props.comments);
 

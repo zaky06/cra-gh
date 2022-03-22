@@ -5,7 +5,6 @@ import style from "./jobs.module.css";
 const Jobs = (props) => {
 
     const posts = props.jobs.map((user, index) => {
-
         return (
             <div key={index}>
                 <div className={style.secondSection}>

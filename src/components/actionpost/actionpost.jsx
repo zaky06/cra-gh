@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./actionpost.module.css";
 
-// TODO Переименуй в ActionPost
 const ActionPost = () => {
     return (
         <div className={style.container}>

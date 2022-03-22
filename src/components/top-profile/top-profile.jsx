@@ -4,7 +4,6 @@ import { BsEnvelope } from 'react-icons/bs';
 import PropTypes from "prop-types";
 
 const TopProfile = (props) => {
-
     return (
         <div className={style.placeholder}>
             <div className={style.profileImg}>
@@ -24,17 +23,14 @@ const TopProfile = (props) => {
     )
 }
     
-
-
 const usersType = PropTypes.shape({
     src: PropTypes.string,
-      name: PropTypes.string,
-      description: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.string,
 })  
 
 TopProfile.propTypes = {
-    user: usersType
-    
+    user: usersType 
 }
 
 export default TopProfile;

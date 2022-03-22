@@ -4,7 +4,6 @@ import style from './nav.module.css';
 import PropTypes from 'prop-types';
 
 const Nav = (props) => {
- 
   return (
     <ul className={style.nav}>
       {props.nav.map((li) => {
