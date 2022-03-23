@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
 import ActionPost from "../actionpost/actionpost";
 import ProfileInfo from "../profileinfo";
@@ -11,7 +10,7 @@ import Copyright from "../copyright";
 import TopProfiles from "../topprofiles";
 import AddFriend from "../add-friend";
 
-const Main = (props) => {
+const Main = () => {
 
   const [posts, setPosts] = useState([]);
 
@@ -41,6 +40,20 @@ const Main = (props) => {
       });
   }, []);
 
+  const [users, setUsers] = useState([]);
+
+  const fetchUsers = async () => {
+      const response = await fetch("http://localhost:8080/users");
+      const data = await response.json();
+      return data;
+  };
+
+  useEffect(() => {
+      fetchUsers().then((users) => {
+          setUsers(users)
+      });
+  }, []);
+
     return (
         <Container>
             <Row className={style.row}>
@@ -49,7 +62,7 @@ const Main = (props) => {
                         <ProfileInfo />
                     </div>
                     <div className={style.block}>
-                        <AddFriend users={props.users} title={"Suggesions"}/>
+                        <AddFriend users={users} title={"Suggesions"}/>
                     </div>
                     <div className={style.block}>
                         <Copyright />
@@ -63,7 +76,7 @@ const Main = (props) => {
                          <Posts posts={posts.slice(0, 1)} />
                      </div>
                      <div className={style.block}>
-                         <TopProfiles users={props.users}/>
+                         <TopProfiles users={users}/>
                      </div>
                      <div className={style.block}>
                          <Posts posts={posts.slice(1, 3)}/>
@@ -80,24 +93,12 @@ const Main = (props) => {
                         <Jobs jobs={jobs.slice(0, 3)} title={"Most Viewed This Week"} />
                     </div>
                     <div className={style.block}>
-                        <AddFriend users={props.users} title={"Most Viewed People"} />
+                        <AddFriend users={users} title={"Most Viewed People"} />
                     </div>
                 </Col>
             </Row>
         </Container>
     )
-}
-
-const usersType = PropTypes.arrayOf(
-    PropTypes.shape({
-      src: PropTypes.string,
-      name: PropTypes.string,
-      description: PropTypes.string,
-    })
-  );
-
-Main.propTypes = {
-    users: usersType, 
 }
 
 export default Main;

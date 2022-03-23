@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 import style from "./header.module.css";
 import Nav from "../nav/nav";
 import Search from "../search/search";
 import Miniprofile from "../miniprofile/miniprofile";
 import Profilelist from "../profilelist/profilelist";
 
-const Header = (props) => {
+const Header = () => {
   const [navItems, setNavItems] = useState([]);
   
   const fetchNav = async () => {
@@ -31,7 +30,6 @@ const Header = (props) => {
           />
           <Search
             className={style.search}
-            iconSrc={props.header.search.iconSrc}
             placeholder={"Search..."}
           />
         </div>
@@ -43,19 +41,6 @@ const Header = (props) => {
       </div>
     </header>
   );
-};
-
-Header.propTypes = {
-  header: PropTypes.shape({
-    nav: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number,
-        name: PropTypes.string,
-        img: PropTypes.string,
-      })
-    ),
-    search: PropTypes.shape({ iconSrc: PropTypes.string }),
-  }),
 };
 
 export default Header;
