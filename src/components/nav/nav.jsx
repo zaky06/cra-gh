@@ -1,5 +1,5 @@
 import React from "react";
-import Item from "../item/item";
+import Item from "../item";
 import style from './nav.module.css';
 import PropTypes from 'prop-types';
 

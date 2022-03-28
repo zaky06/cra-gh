@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./actionpost.module.css";
+import style from "./action-post.module.css";
 
 const ActionPost = () => {
     return (

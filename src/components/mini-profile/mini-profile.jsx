@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./miniprofile.module.css";
+import style from "./mini-profile.module.css";
 import Dropdown from "./dropdown/dropdown";
 
 const Miniprofile = () => {

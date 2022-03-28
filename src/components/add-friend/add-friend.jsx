@@ -6,6 +6,8 @@ import { AiOutlinePlus } from 'react-icons/ai';
 
 const AddFriend = (props) => {
 
+
+
     const users = props.users.map((user, index) => {
         return ( 
             <div key={index} className={style.secondSection}>

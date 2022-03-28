@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import style from "./header.module.css";
-import Nav from "../nav/nav";
-import Search from "../search/search";
-import Miniprofile from "../miniprofile/miniprofile";
-import Profilelist from "../profilelist/profilelist";
+import Nav from "../nav";
+import Search from "../search";
+import Miniprofile from "../mini-profile";
+import Profilelist from "../profile-list";
 
 const Header = () => {
   const [navItems, setNavItems] = useState([]);

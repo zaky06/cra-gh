@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import style from "./topprofiles.module.css"
+import style from "./top-profiles.module.css"
 import { Button } from "react-bootstrap";
 import { IoIosArrowForward, IoIosArrowBack} from 'react-icons/io';
 

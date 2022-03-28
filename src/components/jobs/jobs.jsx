@@ -4,6 +4,10 @@ import style from "./jobs.module.css";
 
 const Jobs = (props) => {
 
+
+    console.log(props.jobs);
+    
+    
     const posts = props.jobs.map((user, index) => {
         return (
             <div key={index}>

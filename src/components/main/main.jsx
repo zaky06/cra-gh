@@ -1,56 +1,56 @@
 import React, {useState, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ActionPost from "../actionpost/actionpost";
-import ProfileInfo from "../profileinfo";
+import ActionPost from "../action-post";
+import ProfileInfo from "../profile-info";
 import SignUp from "../signup";
 import Posts from "../posts";
 import Jobs from "../jobs";
 import style from "./main.module.css";
 import Copyright from "../copyright";
-import TopProfiles from "../topprofiles";
+import TopProfiles from "../top-profiles";
 import AddFriend from "../add-friend";
 
 const Main = () => {
 
   const [posts, setPosts] = useState([]);
 
-  const fetchPosts = async () => {
-    const response = await fetch("http://localhost:8080/posts");
-    const data = await response.json();
-    return data;
-  };
-
   useEffect(() => {
-    fetchPosts().then((posts) => {
-      setPosts(posts);
-    });
+      const fetchPosts = async () => {
+          const response = await fetch("http://localhost:8080/posts");
+          const data = await response.json();
+          return data;
+      };
+
+      fetchPosts().then((posts) => {
+          setPosts(posts);
+      });
   }, []);
 
   const [jobs, setJobs] = useState([]);
 
-  const fetchJobs = async () => {
-      const response = await fetch("http://localhost:8080/jobs");
-      const data = await response.json();
-      return data;
-  };
-
   useEffect(() => {
+      const fetchJobs = async () => {
+          const response = await fetch("http://localhost:8080/jobs");
+          const data = await response.json();
+          return data;
+      };
+
       fetchJobs().then((jobs) => {
-          setJobs(jobs)
+          setJobs(jobs);
       });
   }, []);
 
   const [users, setUsers] = useState([]);
 
-  const fetchUsers = async () => {
-      const response = await fetch("http://localhost:8080/users");
-      const data = await response.json();
-      return data;
-  };
-
   useEffect(() => {
+      const fetchUsers = async () => {
+          const response = await fetch("http://localhost:8080/users");
+          const data = response.json();
+          return data;
+      };
+
       fetchUsers().then((users) => {
-          setUsers(users)
+          setUsers(users);
       });
   }, []);
 

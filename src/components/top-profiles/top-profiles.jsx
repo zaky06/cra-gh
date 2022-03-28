@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import style from "./topprofiles.module.css";
+import style from "./top-profiles.module.css";
 import TopProfile from "../top-profile";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";

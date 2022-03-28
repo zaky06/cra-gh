@@ -1,5 +1,5 @@
 import React from "react";
-import style from './profilelist.module.css';
+import style from './profile-list.module.css';
 import { useState } from "react";
 import PropTypes from 'prop-types';
 import NavMobile from "../nav-mobile";
