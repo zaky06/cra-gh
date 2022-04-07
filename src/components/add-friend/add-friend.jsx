@@ -3,28 +3,36 @@ import PropTypes from "prop-types";
 import style from "./add-friend.module.css";
 import { Button } from "react-bootstrap";
 import { AiOutlinePlus } from 'react-icons/ai';
+import { useState } from "react";
+import { useEffect } from "react";
 
 const AddFriend = (props) => {
 
+    const [users, setUsers] = useState([]);
 
-
-    const users = props.users.map((user, index) => {
-        return ( 
-            <div key={index} className={style.secondSection}>
-                <div className={style.information}>
-                    <img src={user.src} alt="" />
-                    <div className={style.nameAndJob}>
-                        <h4>{user.name}</h4>
-                        <p>{user.description}</p>
+    useEffect(() => {
+        const usersRaw = props.users.map((user, index) => {
+            return ( 
+                <div key={index} className={style.secondSection}>
+                    <div className={style.information}>
+                        <img src={user.src} alt="" />
+                        <div className={style.nameAndJob}>
+                            <h4>{user.name}</h4>
+                            <p>{user.description}</p>
+                        </div>
+                    </div>
+                    <div className={style.buttonPosition}>
+                        <Button size="sm" className={style.button} variant="outline-danger"><AiOutlinePlus/></Button>
                     </div>
                 </div>
-                <div className={style.buttonPosition}>
-                    <Button size="sm" className={style.button} variant="outline-danger"><AiOutlinePlus/></Button>
-                </div>
-            </div>
-            )
-        }  
-    )
+                )
+            }  
+        )
+        setUsers(usersRaw)
+    }, [props.users])
+
+
+    
 
     return (
         <div className={style.addFriend}>
