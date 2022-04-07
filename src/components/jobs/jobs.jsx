@@ -1,24 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 import style from "./jobs.module.css";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Jobs = (props) => {
+    const [posts, setPosts] = useState([]);
 
-
-    console.log(props.jobs);
-    
-    
-    const posts = props.jobs.map((user, index) => {
-        return (
-            <div key={index}>
-                <div className={style.secondSection}>
-                    <p>{user.position}</p>
-                    <p>{user.salary}</p>
+    useEffect(() => {
+        
+        const postsRaw = props.jobs.map((user, index) => {
+            return (
+                <div key={index}>
+                    <div className={style.secondSection}>
+                        <p>{user.position}</p>
+                        <p>{user.salary}</p>
+                    </div>
+                    <p className={style.info}>{user.description}</p>
                 </div>
-                <p className={style.info}>{user.description}</p>
-            </div>
-        )
-    })
+            )
+        })
+        setPosts(postsRaw);
+    }, [props.jobs])
+    
 
     return (
         <div className={style.jobs}>
