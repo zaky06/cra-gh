@@ -13,7 +13,7 @@ In the project directory, you can run:
 ### `npm install`
 
 Install deps
-
+### `node server.js`
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -24,4 +24,3 @@ You will also see any lint errors in the console.
 
 ### `npm run deploy`
 
-Project will be deployed [here](https://balkanskiy.github.io/cra-gh/).
